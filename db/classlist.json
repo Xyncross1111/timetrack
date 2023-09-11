@@ -1,0 +1,35 @@
+[
+    {
+      "day" : "monday",
+      "classes" : [
+        {
+          "key" : "1",
+          "name" : "Math",
+          "timeStart" : "12:00",
+          "timeEnd" : "13:00"
+        },
+        {
+          "key" : "2",
+          "name" : "FICL",
+          "timeStart" : "13:00",
+          "timeEnd" : "14:00"
+        },
+        {
+          "key" : "3",
+          "name" : "Break",
+          "timeStart" : "14:00",
+          "timeEnd" : "15:00"
+        },
+        {
+          "key" : "4",
+          "name" : "Chem Lab",
+          "timeStart" : "15:00",
+          "timeEnd" : "17:00"
+        }
+      ]
+    },
+    {
+      "day" : "tuesday",
+      "classes" : []
+    }
+]
