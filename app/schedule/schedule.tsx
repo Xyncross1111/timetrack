@@ -1,4 +1,5 @@
 import Class from "@/app/class/class";
+import "./style.css";
 
 const Schedule = (props: any) => {
 
@@ -11,7 +12,7 @@ const Schedule = (props: any) => {
     });
 
     return (
-        <div>
+        <div className="schedule">
             {classList}
         </div>
     );
