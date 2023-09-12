@@ -1,0 +1,10 @@
+.datetime{
+    margin-top: 1vh;
+    margin-left: 5vw;
+    font-family: QuickSandLight;
+    font-size: 1.3rem;
+}
+.datetime h2{
+    font-size: 3rem;
+    margin-bottom: -12px;
+}
