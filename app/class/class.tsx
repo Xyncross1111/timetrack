@@ -1,4 +1,5 @@
 import {FC} from "react";
+import "./style.css"
 
 interface classProps {
     key: string;
@@ -7,10 +8,9 @@ interface classProps {
     timeEnd: string;
 }
 const Class: FC<classProps> = (props: classProps) => {
-
     return (
-        <div className={`class - ${props.key}`}>
-            <h1>{props.name}</h1>
+        <div className={`class - ${props.key} classes`}>
+            <h2>{props.name}</h2>
             <p>{props.timeStart} - {props.timeEnd}</p>
         </div>
     );
