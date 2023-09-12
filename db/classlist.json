@@ -1,5 +1,9 @@
 [
     {
+      "day" : "sunday",
+      "classes" : []
+    },
+    {
       "day" : "monday",
       "classes" : [
         {
@@ -30,6 +34,159 @@
     },
     {
       "day" : "tuesday",
-      "classes" : []
+      "classes" : [
+        {
+          "key" : "1",
+          "name" : "Digital Electronics Lab",
+          "timeStart" : "9:00",
+          "timeEnd" : "11:00"
+        },
+        {
+          "key" : "2",
+          "name" : "Break",
+          "timeStart" : "11:00",
+          "timeEnd" : "12:00"
+        },
+        {
+          "key" : "3",
+          "name" : "Chemistry",
+          "timeStart" : "12:00",
+          "timeEnd" : "13:00"
+        },
+        {
+          "key" : "4",
+          "name" : "Math",
+          "timeStart" : "13:00",
+          "timeEnd" : "14:00"
+        },
+        {
+          "key" : "5",
+          "name" : "Yoga",
+          "timeStart" : "14:00",
+          "timeEnd" : "15:00"
+        }
+      ]
+    },
+    {
+      "day" : "wednesday",
+      "classes" : [
+        {
+          "key" : "1",
+          "name" : "Digital Electronics",
+          "timeStart" : "9:00",
+          "timeEnd" : "10:00"
+        },
+        {
+          "key" : "2",
+          "name" : "Computer Workshop",
+          "timeStart" : "10:00",
+          "timeEnd" : "11:00"
+        },
+        {
+          "key" : "3",
+          "name" : "FICL",
+          "timeStart" : "11:00",
+          "timeEnd" : "12:00"
+        },
+        {
+          "key" : "4",
+          "name" : "Break",
+          "timeStart" : "12:00",
+          "timeEnd" : "13:00"
+        },
+        {
+          "key" : "5",
+          "name" : "Sports",
+          "timeStart" : "13:00",
+          "timeEnd" : "15:00"
+        },
+        {
+          "key" : "6",
+          "name" : "Library",
+          "timeStart" : "15:00",
+          "timeEnd" : "16:00"
+        }
+      ]
+    },
+    {
+      "day" : "thursday",
+      "classes" : [
+        {
+          "key" : "1",
+          "name" : "PPS Lab",
+          "timeStart" : "10:00",
+          "timeEnd" : "12:00"
+        },
+        {
+          "key" : "2",
+          "name" : "Digital Electronics",
+          "timeStart" : "12:00",
+          "timeEnd" : "13:00"
+        },
+        {
+          "key" : "3",
+          "name" : "Break",
+          "timeStart" : "13:00",
+          "timeEnd" : "12:00"
+        },
+        {
+          "key" : "4",
+          "name" : "PPS",
+          "timeStart" : "12:00",
+          "timeEnd" : "13:00"
+        }
+      ]
+    },
+    {
+      "day" : "friday",
+      "classes" : [
+        {
+          "key" : "1",
+          "name" : "PPS",
+          "timeStart" : "10:00",
+          "timeEnd" : "12:00"
+        },
+        {
+          "key" : "2",
+          "name" : "Chemistry",
+          "timeStart" : "11:00",
+          "timeEnd" : "12:00"
+        },
+        {
+          "key" : "3",
+          "name" : "Break",
+          "timeStart" : "12:00",
+          "timeEnd" : "13:00"
+        },
+        {
+          "key" : "4",
+          "name" : "CWS Lab",
+          "timeStart" : "13:00",
+          "timeEnd" : "15:00"
+        }
+      ]
+    },
+    {
+      "day" : "thursday",
+      "classes" : [
+        {
+          "key" : "1",
+          "name" : "Math",
+          "timeStart" : "11:00",
+          "timeEnd" : "12:00"
+        },
+        {
+          "key" : "2",
+          "name" : "PPS",
+          "timeStart" : "12:00",
+          "timeEnd" : "13:00"
+        },
+        {
+          "key" : "3",
+          "name" : "Digital Electronics",
+          "timeStart" : "13:00",
+          "timeEnd" : "14:00"
+        }
+      ]
     }
 ]

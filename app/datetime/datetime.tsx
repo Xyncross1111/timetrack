@@ -1,13 +1,16 @@
-import "./style.css"
+import "./datetime.css"
 
 const Datetime = () => {
-    const d = new Date();
-    const months = ["Jan", "Feb", "Mar", "Apr", "May", "June", "July", "Aug", "Sep", "Oct", "Nov", "Dec"];
-    const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+    const date = new Date();
+
+    const month = date.toLocaleDateString('en-us', { month: "short" });
+    const day = date.toLocaleDateString('en-us', { weekday: "long" });
+    const dayNum = date.toLocaleDateString('en-us', { day: "numeric" });
+
     return (
         <div className="datetime">
-            <h2>{months[d.getMonth()]} {d.getDate()}</h2>
-            <h3>{days[d.getDay()]}</h3>
+            <h2>{month} {dayNum}</h2>
+            <h3>{day}</h3>
         </div>
     );
 }

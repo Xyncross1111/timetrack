@@ -8,13 +8,18 @@
 }
 .classes{
     margin-top: 10px;
-    width: 80%;
-    max-width: 300px;
+    width: 100%;
+    /*max-width: 300px;*/
     background-color: #2b7df8;
     border-radius: 10px;
     box-shadow: 5px 5px 20px #00000093;
     padding: 10px;
     font-family: QuickSandLight;
+}
+
+.active {
+    background-color: green;
+
 }
 .classes h2{
     font-family: QuickSandRegular;

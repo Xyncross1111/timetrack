@@ -1,0 +1,37 @@
+nav {
+    width: 100%;
+    /*max-width: 500px;*/
+    /*margin-top: 2vh;*/
+    /*margin-left: 5vw;*/
+    border-radius: 10px;
+    padding: 1px 10px 10px 10px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+
+}
+
+nav button {
+    padding: 10px 20px; /* Adjust padding as needed */
+    margin: 0.5rem;
+    width: 10rem;
+    font-size: 1rem; /* Adjust font size as needed */
+    background-color: #3498db; /* Change the background color */
+    color: #ffffff; /* Change the text color */
+    border: none;
+    border-radius: 10px; /* Adjust border radius as needed */
+    cursor: pointer;
+}
+
+/* Hover effect */
+nav button:hover {
+    background-color: #2980b9; /* Change the background color on hover */
+    transition: color 300ms linear;
+}
+
+/* Active/focus styles */
+nav button:active,
+nav button:focus {
+    outline: none; /* Remove default focus outline */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Add a box shadow on focus/active */
+}
