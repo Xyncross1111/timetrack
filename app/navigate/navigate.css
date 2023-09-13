@@ -8,7 +8,7 @@ nav {
     text-align: center;
     display: flex;
     justify-content: center;
-
+    font-family: QuickSandRegular, "Roboto Light", sans-serif;
 }
 
 nav button {
@@ -16,16 +16,18 @@ nav button {
     margin: 0.5rem;
     width: 10rem;
     font-size: 1rem; /* Adjust font size as needed */
-    background-color: #3498db; /* Change the background color */
+    background-color: #2b7df8; /* Change the background color */
+    box-shadow: 0px 0px 20px #2b7df8b8;
     color: #ffffff; /* Change the text color */
+    text-shadow: 0px 0px 4px #ffffff;
     border: none;
-    border-radius: 10px; /* Adjust border radius as needed */
+    border-radius: 50px; /* Adjust border radius as needed */
     cursor: pointer;
 }
 
 /* Hover effect */
 nav button:hover {
-    background-color: #2980b9; /* Change the background color on hover */
+    background-color: #2b7df8; /* Change the background color on hover */
     transition: color 300ms linear;
 }
 
@@ -33,5 +35,5 @@ nav button:hover {
 nav button:active,
 nav button:focus {
     outline: none; /* Remove default focus outline */
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Add a box shadow on focus/active */
+    box-shadow: 0px 0px 20px #2b7df8b8 /* Add a box shadow on focus/active */
 }

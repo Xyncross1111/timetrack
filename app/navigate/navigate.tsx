@@ -17,10 +17,10 @@ const Navigate: FC<navigateProps> = (props: navigateProps) => {
     return (
         <nav className={"class-buttons"}>
             <button className={"prev"} onClick={handlePrev}>
-                Previous
+                {"◀"} Prev
             </button>
             <button className={"next"} onClick={handleNext}>
-                Next
+                Next {"▶"}
             </button>
         </nav>
     )

@@ -16,12 +16,10 @@
     padding: 10px;
     font-family: QuickSandLight;
 }
-
-.active {
-    background-color: green;
-
-}
 .classes h2{
     font-family: QuickSandRegular;
     text-shadow: 0px 0px 4px #ffffff;
+}
+.active {
+    background-color: #3edd49;
 }
