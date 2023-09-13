@@ -24,6 +24,10 @@ h1{
   text-shadow: 0px 0px 10px #ffffff;
 }
 
+.title {
+  font-size: 2rem;
+}
+
 .info {
   text-align: center;
   font-family: QuickSandLight, "Roboto Light", sans-serif;

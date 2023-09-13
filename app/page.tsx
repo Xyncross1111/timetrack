@@ -7,48 +7,55 @@ import data from "../db/classlist.json";
 
 export default function Home() {
 
-    const date = new Date();
-    const [day, setDay] = useState(date.getDay())
+    let currDate: Date = new Date();
 
-    const classList = data[day].classes;
+    const [date, setDate] = useState(currDate);
+    const [weekDay, setWeekDay] = useState(currDate.getDay())
+
+    const classList = data[weekDay];
     const [classes, setClasses] = useState(classList);
 
     const getClasses = (day: number) => {
-        const classList = data[day].classes;
+        const classList = data[day];
         setClasses(classList);
     }
 
     const handleNext = () => {
 
-        let currDay = day
+        date.setDate(date.getDate() + 1);
 
-        if(day === 6) currDay = 0;
+        let currDay = weekDay
+
+        if(weekDay === 6) currDay = 0;
         else currDay++;
         getClasses(currDay);
 
-        setDay(currDay);
+        setWeekDay(currDay);
     }
 
     const handlePrev = () => {
 
-        let currDay = day;
+        // @ts-ignore
+        date.setDate(date.getDate() - 1);
 
-        if(day === 0) currDay = 6;
+        let currDay = weekDay;
+
+        if(weekDay === 0) currDay = 6;
         else currDay--;
         getClasses(currDay);
 
-        setDay(currDay);
+        setWeekDay(currDay);
     }
 
 
 
     return (
       <>
-          <h1>TimeTrack</h1>
+          <h1 className={"title"}>TimeTrack</h1>
           <h2 className={"info"}>By <a href="https://www.linkedin.com/in/anasmkhan/" target="_blank">Anas Khan</a>, <a href="https://www.linkedin.com/in/adityagiri3600/" target="_blank">Aditya Giri</a></h2>
-          <Datetime/>
+          <Datetime date={date}/>
           <Navigate handlePrev={handlePrev} handleNext={handleNext} />
-          <Schedule classes={classes} />
+          <Schedule classes={classes.classes} day={classes.day} date={date} />
       </>
   )
 }

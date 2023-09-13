@@ -95,12 +95,6 @@
           "timeEnd" : "13:00"
         },
         {
-          "key" : "5",
-          "name" : "Sports",
-          "timeStart" : "13:00",
-          "timeEnd" : "15:00"
-        },
-        {
           "key" : "6",
           "name" : "Library",
           "timeStart" : "15:00",
@@ -111,6 +105,12 @@
     {
       "day" : "thursday",
       "classes" : [
+        {
+          "key" : "5",
+          "name" : "Sports",
+          "timeStart" : "7:30",
+          "timeEnd" : "9:30"
+        },
         {
           "key" : "1",
           "name" : "PPS Lab",
@@ -127,13 +127,13 @@
           "key" : "3",
           "name" : "Break",
           "timeStart" : "13:00",
-          "timeEnd" : "12:00"
+          "timeEnd" : "14:00"
         },
         {
           "key" : "4",
           "name" : "PPS",
-          "timeStart" : "12:00",
-          "timeEnd" : "13:00"
+          "timeStart" : "14:00",
+          "timeEnd" : "15:00"
         }
       ]
     },

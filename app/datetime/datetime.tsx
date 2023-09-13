@@ -1,7 +1,11 @@
 import "./datetime.css"
+import {FC} from "react";
 
-const Datetime = () => {
-    const date = new Date();
+interface datetimeProps {
+    date: Date;
+}
+const Datetime:FC<datetimeProps> = (props: datetimeProps) => {
+    const date = props.date;
 
     const month = date.toLocaleDateString('en-us', { month: "short" });
     const day = date.toLocaleDateString('en-us', { weekday: "long" });

@@ -1,17 +1,24 @@
 import Class from "@/app/class/class";
 import "./schedule.css";
+import {FC} from "react";
 
-const Schedule = (props: any) => {
+
+interface scheduleProps {
+    classes: any;
+    day: string;
+    date: Date;
+}
+const Schedule: FC<scheduleProps> = (props: scheduleProps) => {
 
     const classes = props.classes;
 
     if(classes.length === 0) return (
-        <h1>There are no classes for today.</h1>
+        <h1>There are no classes on {props.day}.</h1>
     )
 
     const classList = classes.map((classItem: any) => {
         return (
-            <Class key={"class"} {...classItem} />
+            <Class key={"class"} {...classItem} date={props.date}/>
         )
     });
 
@@ -20,8 +27,6 @@ const Schedule = (props: any) => {
             {classList}
         </div>
     );
-
-
 }
 
 export default Schedule;
