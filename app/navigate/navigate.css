@@ -19,8 +19,9 @@ nav button {
     background-color: #2b7df8; /* Change the background color */
     box-shadow: 0px 0px 20px #2b7df8b8;
     color: #ffffff; /* Change the text color */
+    text-shadow: 0px 0px 4px #ffffff;
     border: none;
-    border-radius: 10px; /* Adjust border radius as needed */
+    border-radius: 50px; /* Adjust border radius as needed */
     cursor: pointer;
 }
 
