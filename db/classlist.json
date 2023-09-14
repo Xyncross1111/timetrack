@@ -87,18 +87,6 @@
           "name" : "FICL",
           "timeStart" : "11:00",
           "timeEnd" : "12:00"
-        },
-        {
-          "key" : "4",
-          "name" : "Break",
-          "timeStart" : "12:00",
-          "timeEnd" : "13:00"
-        },
-        {
-          "key" : "6",
-          "name" : "Library",
-          "timeStart" : "15:00",
-          "timeEnd" : "16:00"
         }
       ]
     },
@@ -170,6 +158,12 @@
       "day" : "thursday",
       "classes" : [
         {
+          "key" : "3",
+          "name" : "Digital Electronics",
+          "timeStart" : "10:00",
+          "timeEnd" : "11:00"
+        },
+        {
           "key" : "1",
           "name" : "Math",
           "timeStart" : "11:00",
@@ -180,12 +174,6 @@
           "name" : "PPS",
           "timeStart" : "12:00",
           "timeEnd" : "13:00"
-        },
-        {
-          "key" : "3",
-          "name" : "Digital Electronics",
-          "timeStart" : "13:00",
-          "timeEnd" : "14:00"
         }
       ]
     }
