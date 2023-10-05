@@ -107,19 +107,19 @@
         },
         {
           "key" : "2",
-          "name" : "Digital Electronics",
+          "name" : "Break",
           "timeStart" : "12:00",
           "timeEnd" : "13:00"
         },
         {
           "key" : "3",
-          "name" : "Break",
+          "name" : "PPS",
           "timeStart" : "13:00",
           "timeEnd" : "14:00"
         },
         {
           "key" : "4",
-          "name" : "PPS",
+          "name" : MATHS",
           "timeStart" : "14:00",
           "timeEnd" : "15:00"
         }
