@@ -14,19 +14,19 @@
         },
         {
           "key" : "2",
-          "name" : "FICL",
+          "name" : "Bio-Informatics",
           "timeStart" : "13:00",
           "timeEnd" : "14:00"
         },
         {
           "key" : "3",
-          "name" : "Break",
+          "name" : "Recess",
           "timeStart" : "14:00",
           "timeEnd" : "15:00"
         },
         {
           "key" : "4",
-          "name" : "Chem Lab",
+          "name" : "Lab (A1/A2 - Math, A3 - OOPS)",
           "timeStart" : "15:00",
           "timeEnd" : "17:00"
         }
@@ -37,31 +37,31 @@
       "classes" : [
         {
           "key" : "1",
-          "name" : "Digital Electronics Lab",
+          "name" : "Lab (A1/A2 - OOPS, A3 - Math)",
           "timeStart" : "9:00",
           "timeEnd" : "11:00"
         },
         {
           "key" : "2",
-          "name" : "Break",
+          "name" : "Recess",
           "timeStart" : "11:00",
           "timeEnd" : "12:00"
         },
         {
           "key" : "3",
-          "name" : "Chemistry",
+          "name" : "Physics",
           "timeStart" : "12:00",
           "timeEnd" : "13:00"
         },
         {
           "key" : "4",
-          "name" : "Digital Electronics",
+          "name" : "Math",
           "timeStart" : "13:00",
           "timeEnd" : "14:00"
         },
         {
           "key" : "5",
-          "name" : "Yoga",
+          "name" : "UHV",
           "timeStart" : "14:00",
           "timeEnd" : "15:00"
         }
@@ -72,7 +72,7 @@
       "classes" : [
         {
           "key" : "1",
-          "name" : "Digital Electronics",
+          "name" : "OOPS",
           "timeStart" : "9:00",
           "timeEnd" : "10:00"
         },
@@ -84,9 +84,21 @@
         },
         {
           "key" : "3",
-          "name" : "FICL",
+          "name" : "Bio-Informatics",
           "timeStart" : "11:00",
           "timeEnd" : "12:00"
+        },
+        {
+          "key" : "4",
+          "name" : "Recess",
+          "timeStart" : "12:00",
+          "timeEnd" : "13:00"
+        },
+        {
+          "key" : "5",
+          "name" : "Lab (A1/A2 - Physics)",
+          "timeStart" : "13:00",
+          "timeEnd" : "15:00"
         }
       ]
     },
@@ -94,34 +106,34 @@
       "day" : "thursday",
       "classes" : [
         {
-          "key" : "5",
-          "name" : "Sports",
-          "timeStart" : "7:30",
-          "timeEnd" : "9:30"
-        },
-        {
           "key" : "1",
-          "name" : "PPS Lab",
+          "name" : "Lab (A1/A2 - Eng, A3 - CWS)",
           "timeStart" : "10:00",
           "timeEnd" : "12:00"
         },
         {
           "key" : "2",
-          "name" : "Break",
+          "name" : "Recess",
           "timeStart" : "12:00",
           "timeEnd" : "13:00"
         },
         {
           "key" : "3",
-          "name" : "PPS",
+          "name" : "OOPS",
           "timeStart" : "13:00",
           "timeEnd" : "14:00"
         },
         {
           "key" : "4",
-          "name" : "Math",
+          "name" : "Computer Architecture",
           "timeStart" : "14:00",
           "timeEnd" : "15:00"
+        },
+        {
+          "key" : "5",
+          "name" : "English",
+          "timeStart" : "15:00",
+          "timeEnd" : "16:00"
         }
       ]
     },
@@ -130,25 +142,25 @@
       "classes" : [
         {
           "key" : "1",
-          "name" : "PPS",
+          "name" : "English",
+          "timeStart" : "9:00",
+          "timeEnd" : "10:00"
+        },
+        {
+          "key" : "2",
+          "name" : "Computer Architecture",
           "timeStart" : "10:00",
           "timeEnd" : "11:00"
         },
         {
-          "key" : "2",
-          "name" : "Chemistry",
+          "key" : "3",
+          "name" : "Physics",
           "timeStart" : "11:00",
           "timeEnd" : "12:00"
         },
         {
-          "key" : "3",
-          "name" : "Break",
-          "timeStart" : "12:00",
-          "timeEnd" : "13:00"
-        },
-        {
           "key" : "4",
-          "name" : "CWS Lab",
+          "name" : "Lab (A1/A2 - CWS, A3 - Eng)",
           "timeStart" : "13:00",
           "timeEnd" : "15:00"
         }
@@ -158,22 +170,40 @@
       "day" : "thursday",
       "classes" : [
         {
-          "key" : "3",
-          "name" : "Digital Electronics",
+          "key" : "1",
+          "name" : "Lab (A3 - Phy)",
+          "timeStart" : "8:00",
+          "timeEnd" : "10:00"
+        },
+        {
+          "key" : "2",
+          "name" : "Recess",
           "timeStart" : "10:00",
           "timeEnd" : "11:00"
         },
         {
-          "key" : "1",
+          "key" : "3",
           "name" : "Math",
           "timeStart" : "11:00",
           "timeEnd" : "12:00"
         },
         {
-          "key" : "2",
-          "name" : "PPS",
+          "key" : "4",
+          "name" : "Physics",
           "timeStart" : "12:00",
           "timeEnd" : "13:00"
+        },
+        {
+          "key" : "5",
+          "name" : "OOPS",
+          "timeStart" : "13:00",
+          "timeEnd" : "14:00"
+        },
+        {
+          "key" : "6",
+          "name" : "Arts",
+          "timeStart" : "14:00",
+          "timeEnd" : "16:00"
         }
       ]
     }
