@@ -3,7 +3,8 @@ import {useState} from "react";
 import Schedule from "@/app/schedule/schedule";
 import Datetime from "@/app/datetime/datetime";
 import Navigate from "@/app/navigate/navigate";
-import data from "../db/classlist.json";
+import data from "../db/a.json";
+import './globals.css';
 
 export default function Home() {
 
@@ -48,9 +49,8 @@ export default function Home() {
     }
 
 
-
     return (
-      <>
+      <>   
           <h1 className={"title"}>TimeTrack</h1>
           <h2 className={"info"}>By <a href="https://www.linkedin.com/in/anasmkhan/" target="_blank">Anas Khan</a>, <a href="https://www.linkedin.com/in/adityagiri3600/" target="_blank">Aditya Giri</a></h2>
           <Datetime date={date}/>
