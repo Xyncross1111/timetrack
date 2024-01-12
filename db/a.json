@@ -160,6 +160,12 @@
         },
         {
           "key" : "4",
+          "name" : "Recess",
+          "timeStart" : "12:00",
+          "timeEnd" : "13:00"
+        },
+        {
+          "key" : "5",
           "name" : "Lab (A1/A2 - CWS, A3 - Eng)",
           "timeStart" : "13:00",
           "timeEnd" : "15:00"
