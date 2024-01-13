@@ -26,7 +26,7 @@
         },
         {
           "key" : "4",
-          "name" : "Lab (A1/A2 - Math, A3 - OOPS)",
+          "name" : "OOPS Lab",
           "timeStart" : "15:00",
           "timeEnd" : "17:00"
         }
@@ -37,7 +37,7 @@
       "classes" : [
         {
           "key" : "1",
-          "name" : "Lab (A1/A2 - OOPS, A3 - Math)",
+          "name" : "Math Lab",
           "timeStart" : "9:00",
           "timeEnd" : "11:00"
         },
@@ -87,18 +87,6 @@
           "name" : "Bio-Informatics",
           "timeStart" : "11:00",
           "timeEnd" : "12:00"
-        },
-        {
-          "key" : "4",
-          "name" : "Recess",
-          "timeStart" : "12:00",
-          "timeEnd" : "13:00"
-        },
-        {
-          "key" : "5",
-          "name" : "Lab (A1/A2 - Physics)",
-          "timeStart" : "13:00",
-          "timeEnd" : "15:00"
         }
       ]
     },
@@ -107,7 +95,7 @@
       "classes" : [
         {
           "key" : "1",
-          "name" : "Lab (A1/A2 - Eng, A3 - CWS)",
+          "name" : "CWS Lab",
           "timeStart" : "10:00",
           "timeEnd" : "12:00"
         },
@@ -166,7 +154,7 @@
         },
         {
           "key" : "5",
-          "name" : "Lab (A1/A2 - CWS, A3 - Eng)",
+          "name" : "English Lab",
           "timeStart" : "13:00",
           "timeEnd" : "15:00"
         }
@@ -177,7 +165,7 @@
       "classes" : [
         {
           "key" : "1",
-          "name" : "Lab (A3 - Phy)",
+          "name" : "Physics Lab",
           "timeStart" : "8:00",
           "timeEnd" : "10:00"
         },
