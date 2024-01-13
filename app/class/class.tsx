@@ -1,5 +1,6 @@
-import {FC} from "react";
+import { FC } from "react";
 import "./class.css"
+import Image from "next/image";
 
 interface classProps {
     key: string;
@@ -22,12 +23,33 @@ const Class: FC<classProps> = (props: classProps) => {
     const timeStart = parseInt(props.timeStart);
     const timeEnd = parseInt(props.timeEnd);
 
-    if(hour >= timeStart && hour < timeEnd && props.date.getDate() === date.getDate()) {
+    if (hour >= timeStart && hour < timeEnd && props.date.getDate() === date.getDate()) {
         className += " active";
+    }
+    if(props.name === "Math"){
+        return (
+            <div className={className}>
+                <h2>{props.name}</h2>
+                <p>{props.timeStart} - {props.timeEnd}</p>
+                <div className="icon">
+                    <Image src="/plus.png" alt="" width={50} height={50} />
+                </div>
+            </div>
+        );
+    }
+    else if(props.name === "Physics"){
+        return (
+            <div className={className}>
+                <h2>{props.name}</h2>
+                <p>{props.timeStart} - {props.timeEnd}</p>
+                <div className="icon">
+                    <Image src="/physics.png" alt="" width={50} height={50} />
+                </div>
+            </div>
+        );
     }
     return (
         <div className={className}>
-            {/*<p>start: {parseInt(props.timeStart)} curr: {hour} end: {parseInt(props.timeEnd)}</p>*/}
             <h2>{props.name}</h2>
             <p>{props.timeStart} - {props.timeEnd}</p>
         </div>
