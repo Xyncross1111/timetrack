@@ -27,13 +27,6 @@ nav button {
     cursor: pointer;
 }
 
-/* Hover effect */
-nav button:hover {
-    background-color: #2b7df8;
-    /* Change the background color on hover */
-    transition: color 300ms linear;
-}
-
 /* Active/focus styles */
 nav button:active,
 nav button:focus {

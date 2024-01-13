@@ -1,8 +1,7 @@
 .container{
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    width: 220px;
+    justify-content: right;
     margin-right: 20px;
     margin-bottom: 5px;
 }
@@ -80,4 +79,5 @@ input:checked+.slider:before {
 .text{
     font-size: 1.5rem;
     font-family: QuickSandRegular;
+    margin-right: 10px;
 }
