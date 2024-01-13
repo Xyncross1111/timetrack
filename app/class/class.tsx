@@ -23,10 +23,10 @@ const Class: FC<classProps> = (props: classProps) => {
     const timeStart = parseInt(props.timeStart);
     const timeEnd = parseInt(props.timeEnd);
 
-    // make 10-11 classes active
-    if (timeStart === 12 && timeEnd === 13) {
-        className += " active";
-    }
+    // for dev purposes xd
+    // if (timeStart === 12 && timeEnd === 13) {
+    //     className += " active";
+    // }
 
     if (hour >= timeStart && hour < timeEnd && props.date.getDate() === date.getDate()) {
         className += " active";
