@@ -1,3 +1,4 @@
+"use client;"
 import { FC } from "react";
 import "./class.css"
 import Icon from "@/app/icon/icon";
@@ -33,6 +34,9 @@ const Class: FC<classProps> = (props: classProps) => {
     }
     if (timeStart + 2 === timeEnd){
         className += " lab";
+    }
+    if (timeEnd <= hour && props.date.getDate() <= date.getDate()){
+        className += " past";
     }
     if(props.name === "Math" || props.name === "Physics"){
         return (

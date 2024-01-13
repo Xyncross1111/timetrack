@@ -46,6 +46,15 @@
     padding-bottom: 70px;
 }
 
+.past{
+    background-color: rgba(0, 0, 0, 0.61);
+    opacity: 0.7;
+}
+.past h2{
+    text-decoration: line-through;
+    text-shadow: none;
+}
+
 .icon {
     margin-top: -50px;
     float: right;
