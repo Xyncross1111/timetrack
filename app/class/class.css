@@ -2,24 +2,37 @@
     font-family: QuickSandLight;
     src: url(fonts/Quicksand-Light.ttf);
 }
+
 @font-face {
     font-family: QuickSandRegular;
     src: url(fonts/Quicksand-Regular.ttf);
 }
-.classes{
+
+.classes {
     margin-top: 10px;
     width: 100%;
     /*max-width: 300px;*/
-    background-color: #2b7df8;
+    /* From https://css.glass */
+    background: rgba(43, 125, 248, 0.272);
     border-radius: 10px;
-    box-shadow: 5px 5px 20px #00000093;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1), 5px 5px 20px #00000093;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(43, 125, 248, 0.78);
     padding: 10px;
     font-family: QuickSandLight;
 }
-.classes h2{
+
+.classes h2 {
     font-family: QuickSandRegular;
     text-shadow: 0px 0px 4px #ffffff;
 }
+
 .active {
-    background-color: #3edd49;
+    /* From https://css.glass */
+    background: rgba(62, 221, 73, 0.42);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1), 5px 5px 20px #00000093;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid #3edd49;
 }

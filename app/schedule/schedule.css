@@ -5,7 +5,7 @@
     /*margin-top: 2vh;*/
     /*margin-left: 5vw;*/
     margin: 2vh auto;
-    background-color: #2b7df8;
+    background: linear-gradient(135deg, #2b7df8b8 0%, #0f2d58b8 100%);
     box-shadow: 0px 0px 20px #2b7df8b8;
     border-radius: 10px;
     padding: 1px 10px 10px 10px;
