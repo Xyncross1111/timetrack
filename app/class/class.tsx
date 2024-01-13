@@ -1,6 +1,6 @@
 import { FC } from "react";
 import "./class.css"
-import Image from "next/image";
+import Icon from "@/app/icon/icon";
 
 interface classProps {
     key: string;
@@ -23,28 +23,20 @@ const Class: FC<classProps> = (props: classProps) => {
     const timeStart = parseInt(props.timeStart);
     const timeEnd = parseInt(props.timeEnd);
 
+    // make 10-11 classes active
+    if (timeStart === 12 && timeEnd === 13) {
+        className += " active";
+    }
+
     if (hour >= timeStart && hour < timeEnd && props.date.getDate() === date.getDate()) {
         className += " active";
     }
-    if(props.name === "Math"){
+    if(props.name === "Math" || props.name === "Physics"){
         return (
             <div className={className}>
                 <h2>{props.name}</h2>
                 <p>{props.timeStart} - {props.timeEnd}</p>
-                <div className="icon">
-                    <Image src="/plus.png" alt="" width={50} height={50} />
-                </div>
-            </div>
-        );
-    }
-    else if(props.name === "Physics"){
-        return (
-            <div className={className}>
-                <h2>{props.name}</h2>
-                <p>{props.timeStart} - {props.timeEnd}</p>
-                <div className="icon">
-                    <Image src="/physics.png" alt="" width={50} height={50} />
-                </div>
+                <Icon class={props.name} />
             </div>
         );
     }

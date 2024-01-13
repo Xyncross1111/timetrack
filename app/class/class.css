@@ -31,9 +31,10 @@
 .active {
     font-size: 1.3rem;
     margin-top: -10px;
-    width: 102%;
-    margin-left: -1%;
-    transform: rotateX(-10deg);
+    margin-bottom: -5px;
+    width: 110%;
+    margin-left: -5%;
+    transform: rotateX(0deg);
     background: rgba(62, 221, 73, 0.42);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1), 5px 5px 20px #00000093, 0 -10px 20px #0000006c;
     backdrop-filter: blur(5px);
