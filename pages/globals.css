@@ -55,3 +55,9 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+.datetime-batch-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
