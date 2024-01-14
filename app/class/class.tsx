@@ -35,7 +35,7 @@ const Class: FC<classProps> = (props: classProps) => {
     if (timeStart + 2 === timeEnd){
         className += " lab";
     }
-    if (timeEnd <= hour && props.date.getDate() <= date.getDate()){
+    if ((timeEnd <= hour && props.date.getDate() == date.getDate()) || props.date.getDate() < date.getDate()){
         className += " past";
     }
     if(props.name === "Math" || props.name === "Physics" || props.name === "OOPS"){
