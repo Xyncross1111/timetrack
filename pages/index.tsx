@@ -71,7 +71,7 @@ export default function Home() {
     return (
         <>
             <h1 className={"title"}>TimeTrack</h1>
-            <h2 className={"info"}>By <a href="https://www.linkedin.com/in/anasmkhan/" target="_blank">Anas Khan</a>, <a href="https://www.linkedin.com/in/adityagiri3600/" target="_blank">Aditya Giri</a></h2>
+            <h2 className={"info"}><a href="https://github.com/Xyncross1111/timetrack">Repo</a></h2>
             <div className="datetime-batch-container">
                 <Datetime date={date} />
                 <Batch batch={batch} setBatch={setBatch} setClasses={setClasses} weekDay={weekDay} />
