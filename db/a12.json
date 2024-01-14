@@ -26,7 +26,7 @@
         },
         {
           "key" : "4",
-          "name" : "Lab (A1/A2 - Math, A3 - OOPS)",
+          "name" : "Math Lab",
           "timeStart" : "15:00",
           "timeEnd" : "17:00"
         }
@@ -37,7 +37,7 @@
       "classes" : [
         {
           "key" : "1",
-          "name" : "Lab (A1/A2 - OOPS, A3 - Math)",
+          "name" : "OOPS Lab",
           "timeStart" : "9:00",
           "timeEnd" : "11:00"
         },
@@ -96,7 +96,7 @@
         },
         {
           "key" : "5",
-          "name" : "Lab (A1/A2 - Physics)",
+          "name" : "Physics Lab",
           "timeStart" : "13:00",
           "timeEnd" : "15:00"
         }
@@ -107,7 +107,7 @@
       "classes" : [
         {
           "key" : "1",
-          "name" : "Lab (A1/A2 - Eng, A3 - CWS)",
+          "name" : "English Lab",
           "timeStart" : "10:00",
           "timeEnd" : "12:00"
         },
@@ -148,13 +148,13 @@
         },
         {
           "key" : "2",
-          "name" : "Computer Architecture",
+          "name" : "Physics",
           "timeStart" : "10:00",
           "timeEnd" : "11:00"
         },
         {
           "key" : "3",
-          "name" : "Physics",
+          "name" : "Computer Architecture",
           "timeStart" : "11:00",
           "timeEnd" : "12:00"
         },
@@ -166,7 +166,7 @@
         },
         {
           "key" : "5",
-          "name" : "Lab (A1/A2 - CWS, A3 - Eng)",
+          "name" : "CWS Lab",
           "timeStart" : "13:00",
           "timeEnd" : "15:00"
         }
@@ -177,36 +177,24 @@
       "classes" : [
         {
           "key" : "1",
-          "name" : "Lab (A3 - Phy)",
-          "timeStart" : "8:00",
-          "timeEnd" : "10:00"
-        },
-        {
-          "key" : "2",
-          "name" : "Recess",
-          "timeStart" : "10:00",
-          "timeEnd" : "11:00"
-        },
-        {
-          "key" : "3",
           "name" : "Math",
           "timeStart" : "11:00",
           "timeEnd" : "12:00"
         },
         {
-          "key" : "4",
+          "key" : "2",
           "name" : "Physics",
           "timeStart" : "12:00",
           "timeEnd" : "13:00"
         },
         {
-          "key" : "5",
+          "key" : "3",
           "name" : "OOPS",
           "timeStart" : "13:00",
           "timeEnd" : "14:00"
         },
         {
-          "key" : "6",
+          "key" : "4",
           "name" : "Arts",
           "timeStart" : "14:00",
           "timeEnd" : "16:00"
