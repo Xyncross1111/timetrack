@@ -23,9 +23,12 @@ const Batch: FC<BatchProps> = ({ batch, weekDay, setClasses, setBatch }: BatchPr
 
     return (
         <div className="container">
-            <p className="text">{batch.toUpperCase()}</p>
+            <div className="text">
+                <p className={`${batch === "A1/A2" ? "selected" : "not-selected"}`}>A1/A2</p>
+                <p className={`${batch === "A3" ? "selected" : "not-selected"}`}>A3</p>
+            </div>
             <label className="switch">
-                <input type="checkbox" onChange={handleBatch} />
+                <input type="checkbox" onChange={handleBatch} checked={batch === "A3"}/>
                 <span className="slider round"></span>
             </label>
         </div>
