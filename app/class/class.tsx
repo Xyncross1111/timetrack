@@ -38,7 +38,10 @@ const Class: FC<classProps> = (props: classProps) => {
     if ((timeEnd <= hour && props.date.getDate() == date.getDate()) || props.date.getDate() < date.getDate()){
         className += " past";
     }
-    if(props.name === "Math" || props.name === "Physics" || props.name === "OOPS" || props.name === "English" || props.name === "Computer Architecture"){
+    if (props.name === "Recess"){
+        className += " recess";
+    }
+    if(props.name === "Math" || props.name === "Physics" || props.name === "OOPS" || props.name === "English" || props.name === "UHV"){
         return (
             <div className={className}>
                 <h2>{props.name}</h2>
