@@ -8,33 +8,39 @@
       "classes" : [
         {
           "key" : "1",
-          "name" : "Open Elective",
+          "name" : "Lab(B1/B3 - OS, B2/B4 - DH&V)",
           "timeStart" : "9:00",
-          "timeEnd" : "10:00"
+          "timeEnd" : "11:00"
         },
         {
           "key" : "2",
           "name" : "OS",
-          "timeStart" : "10:00",
-          "timeEnd" : "11:00"
-        },
-        {
-          "key" : "3",
-          "name" : "DBMS",
           "timeStart" : "11:00",
           "timeEnd" : "12:00"
         },
         {
-          "key" : "4",
+          "key" : "3",
           "name" : "Recess",
           "timeStart" : "12:00",
           "timeEnd" : "13:00"
         },
         {
-          "key" : "5",
-          "name" : "Lab (B1/B3 - DBMS , B2/B4 - DH & V)",
+          "key" : "4",
+          "name" : "TOC",
           "timeStart" : "13:00",
+          "timeEnd" : "14:00"
+        },
+        {
+          "key" : "5",
+          "name" : "DBMS",
+          "timeStart" : "14:00",
           "timeEnd" : "15:00"
+        },
+        {
+          "key" : "6",
+          "name" : "Open Elective",
+          "timeStart" : "15:00",
+          "timeEnd" : "16:00"
         }
       ]
     },
@@ -43,33 +49,39 @@
       "classes" : [
         {
           "key" : "1",
-          "name" : "Open Elective",
+          "name" : "Lab(B1/B3 - DH&V, B2/B4 - OS)",
           "timeStart" : "9:00",
-          "timeEnd" : "10:00"
-        },
-        {
-          "key" : "2",
-          "name" : "DBMS",
-          "timeStart" : "10:00",
           "timeEnd" : "11:00"
         },
         {
-          "key" : "3",
-          "name" : "OS",
+          "key" : "2",
+          "name" : "AI",
           "timeStart" : "11:00",
           "timeEnd" : "12:00"
         },
         {
-          "key" : "4",
+          "key" : "3",
           "name" : "Recess",
           "timeStart" : "12:00",
           "timeEnd" : "13:00"
         },
         {
-          "key" : "5",
-          "name" : "Lab (B1/B3 - DH & V, B2/B4 - OS)",
+          "key" : "4",
+          "name" : "OS",
           "timeStart" : "13:00",
+          "timeEnd" : "14:00"
+        },
+        {
+          "key" : "5",
+          "name" : "DBMS",
+          "timeStart" : "14:00",
           "timeEnd" : "15:00"
+        },
+        {
+          "key" : "6",
+          "name" : "Open Elective",
+          "timeStart" : "15:00",
+          "timeEnd" : "16:00"
         }
       ]
     },
@@ -78,19 +90,19 @@
       "classes" : [
         {
           "key" : "1",
-          "name" : "AI",
+          "name" : "OS",
           "timeStart" : "9:00",
           "timeEnd" : "10:00"
         },
         {
           "key" : "2",
-          "name" : "Open Elective",
+          "name" : "DBMS",
           "timeStart" : "10:00",
           "timeEnd" : "11:00"
         },
         {
           "key" : "3",
-          "name" : "OS",
+          "name" : "CN",
           "timeStart" : "11:00",
           "timeEnd" : "12:00"
         },
@@ -102,9 +114,15 @@
         },
         {
           "key" : "5",
-          "name" : "Lab (B1/B3 - OS, B2/B3 - DH & V)",
+          "name" : "Lab (B1/B3 - DBMS, B2/B4 - DH & V)",
           "timeStart" : "13:00",
           "timeEnd" : "15:00"
+        },
+        {
+          "key" : "6",
+          "name" : "Open Elective",
+          "timeStart" : "15:00",
+          "timeEnd" : "16:00"
         }
       ]
     },
@@ -113,39 +131,39 @@
       "classes" : [
         {
           "key" : "1",
-          "name" : "DBMS",
-          "timeStart" : "8:30",
-          "timeEnd" : "9:30"
+          "name" : "AI",
+          "timeStart" : "9:00",
+          "timeEnd" : "10:00"
         },
         {
           "key" : "2",
-          "name" : "TOC",
-          "timeStart" : "9:30",
-          "timeEnd" : "10:30"
+          "name" : "DBMS",
+          "timeStart" : "10:00",
+          "timeEnd" : "11:00"
         },
         {
           "key" : "3",
-          "name" : "AI",
-          "timeStart" : "10:30",
-          "timeEnd" : "11:30"
+          "name" : "Recess",
+          "timeStart" : "11:00",
+          "timeEnd" : "12:00"
         },
         {
           "key" : "4",
-          "name" : "Recess",
-          "timeStart" : "11:30",
-          "timeEnd" : "12:30"
+          "name" : "TOC",
+          "timeStart" : "12:00",
+          "timeEnd" : "13:00"
         },
         {
           "key" : "5",
-          "name" : "CN",
-          "timeStart" : "12:30",
-          "timeEnd" : "13:30"
+          "name" : "Lab (B1/B3 - DH&V, B2/B4 - DBMS)",
+          "timeStart" : "13:00",
+          "timeEnd" : "15:00"
         },
         {
           "key" : "6",
-          "name" : "Lab (B1/B3 - DH & V, B2/B3 - DBMS)",
-          "timeStart" : "13:30",
-          "timeEnd" : "15:30"
+          "name" : "Open Elective",
+          "timeStart" : "15:00",
+          "timeEnd" : "16:00"
         }
       ]
     },
@@ -154,45 +172,39 @@
       "classes" : [
         {
           "key" : "1",
-          "name" : "AI",
-          "timeStart" : "8:30",
-          "timeEnd" : "9:30"
+          "name" : "TOC",
+          "timeStart" : "9:00",
+          "timeEnd" : "10:00"
         },
         {
           "key" : "2",
-          "name" : "TOC",
-          "timeStart" : "9:30",
-          "timeEnd" : "10:30"
+          "name" : "CN",
+          "timeStart" : "10:00",
+          "timeEnd" : "11:00"
         },
         {
           "key" : "3",
-          "name" : "OS",
-          "timeStart" : "10:30",
-          "timeEnd" : "11:30"
+          "name" : "Recess",
+          "timeStart" : "11:00",
+          "timeEnd" : "12:00"
         },
         {
           "key" : "4",
-          "name" : "CN",
-          "timeStart" : "11:30",
-          "timeEnd" : "12:30"
+          "name" : "EVS",
+          "timeStart" : "12:00",
+          "timeEnd" : "14:00"
         },
         {
           "key" : "5",
-          "name" : "Recess",
-          "timeStart" : "12:30",
-          "timeEnd" : "13:30"
+          "name" : "Honor",
+          "timeStart" : "14:00",
+          "timeEnd" : "15:00"
         },
         {
           "key" : "6",
-          "name" : "TOC",
-          "timeStart" : "13:30",
-          "timeEnd" : "14:30"
-        },
-        {
-          "key" : "7",
-          "name" : "Honor",
-          "timeStart" : "14:30",
-          "timeEnd" : "15:30"
+          "name" : "Minor",
+          "timeStart" : "15:00",
+          "timeEnd" : "16:00"
         }
       ]
     },
@@ -201,33 +213,39 @@
       "classes" : [
         {
           "key" : "1",
-          "name" : "CN",
-          "timeStart" : "8:30",
-          "timeEnd" : "9:30"
+          "name" : "AI",
+          "timeStart" : "9:00",
+          "timeEnd" : "10:00"
         },
         {
           "key" : "2",
-          "name" : "DBMS",
-          "timeStart" : "9:30",
-          "timeEnd" : "10:30"
+          "name" : "OS",
+          "timeStart" : "10:00",
+          "timeEnd" : "11:00"
         },
         {
           "key" : "3",
-          "name" : "EVS",
-          "timeStart" : "10:30",
-          "timeEnd" : "12:30"
+          "name" : "Recess",
+          "timeStart" : "11:00",
+          "timeEnd" : "12:00"
         },
         {
           "key" : "4",
-          "name" : "Recess",
-          "timeStart" : "12:30",
-          "timeEnd" : "13:30"
+          "name" : "CN",
+          "timeStart" : "12:00",
+          "timeEnd" : "13:00"
         },
         {
           "key" : "5",
-          "name" : "Honors",
-          "timeStart" : "13:30",
-          "timeEnd" : "15:30"
+          "name" : "Honor",
+          "timeStart" : "13:00",
+          "timeEnd" : "15:00"
+        },
+        {
+          "key" : "6",
+          "name" : "Minor",
+          "timeStart" : "15:00",
+          "timeEnd" : "16:00"
         }
       ]
     }
