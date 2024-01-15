@@ -1,0 +1,234 @@
+[
+    {
+      "day" : "sunday",
+      "classes" : []
+    },
+    {
+      "day" : "monday",
+      "classes" : [
+        {
+          "key" : "1",
+          "name" : "Open Elective",
+          "timeStart" : "9:00",
+          "timeEnd" : "10:00"
+        },
+        {
+          "key" : "2",
+          "name" : "Lab (A1/A3 - DH & V , A2/A4 - DBMS)",
+          "timeStart" : "10:00",
+          "timeEnd" : "12:00"
+        },
+        {
+          "key" : "3",
+          "name" : "Recess",
+          "timeStart" : "12:00",
+          "timeEnd" : "13:00"
+        },
+        {
+          "key" : "4",
+          "name" : "OS",
+          "timeStart" : "13:00",
+          "timeEnd" : "14:00"
+        },
+        {
+          "key" : "5",
+          "name" : "CN",
+          "timeStart" : "14:00",
+          "timeEnd" : "15:00"
+        }
+      ]
+    },
+    {
+      "day" : "tuesday",
+      "classes" : [
+        {
+          "key" : "1",
+          "name" : "Open Elective",
+          "timeStart" : "9:00",
+          "timeEnd" : "10:00"
+        },
+        {
+          "key" : "2",
+          "name" : "DBMS",
+          "timeStart" : "10:00",
+          "timeEnd" : "11:00"
+        },
+        {
+          "key" : "3",
+          "name" : "AI",
+          "timeStart" : "11:00",
+          "timeEnd" : "12:00"
+        },
+        {
+          "key" : "4",
+          "name" : "Recess",
+          "timeStart" : "12:00",
+          "timeEnd" : "13:00"
+        },
+        {
+          "key" : "5",
+          "name" : "TOC",
+          "timeStart" : "13:00",
+          "timeEnd" : "14:00"
+        },
+        {
+          "key" : "6",
+          "name" : "OS",
+          "timeStart" : "14:00",
+          "timeEnd" : "15:00"
+        }
+      ]
+    },
+    {
+      "day" : "wednesday",
+      "classes" : [
+        {
+          "key" : "1",
+          "name" : "TOC",
+          "timeStart" : "9:00",
+          "timeEnd" : "10:00"
+        },
+        {
+          "key" : "2",
+          "name" : "Open Elective",
+          "timeStart" : "10:00",
+          "timeEnd" : "11:00"
+        },
+        {
+          "key" : "3",
+          "name" : "AI",
+          "timeStart" : "11:00",
+          "timeEnd" : "12:00"
+        },
+        {
+          "key" : "4",
+          "name" : "Recess",
+          "timeStart" : "12:00",
+          "timeEnd" : "13:00"
+        },
+        {
+          "key" : "5",
+          "name" : "EVS",
+          "timeStart" : "13:00",
+          "timeEnd" : "15:00"
+        }
+      ]
+    },
+    {
+      "day" : "thursday",
+      "classes" : [
+        {
+          "key" : "1",
+          "name" : "cn",
+          "timeStart" : "8:30",
+          "timeEnd" : "9:30"
+        },
+        {
+          "key" : "2",
+          "name" : "dbms",
+          "timeStart" : "9:30",
+          "timeEnd" : "10:30"
+        },
+        {
+          "key" : "3",
+          "name" : "OS",
+          "timeStart" : "10:30",
+          "timeEnd" : "11:30"
+        },
+        {
+          "key" : "4",
+          "name" : "AI",
+          "timeStart" : "11:30",
+          "timeEnd" : "12:30"
+        },
+        {
+          "key" : "5",
+          "name" : "Recess",
+          "timeStart" : "12:30",
+          "timeEnd" : "13:30"
+        },
+        {
+          "key" : "6",
+          "name" : "Lab (A1/A3 - DBMS, A2/A4 - DH & V)",
+          "timeStart" : "13:30",
+          "timeEnd" : "15:30"
+        }
+      ]
+    },
+    {
+      "day" : "friday",
+      "classes" : [
+        {
+          "key" : "1",
+          "name" : "CN",
+          "timeStart" : "8:30",
+          "timeEnd" : "9:30"
+        },
+        {
+          "key" : "2",
+          "name" : "Lab(A1/A3 - DH & V, A2/A4 - OS",
+          "timeStart" : "9:30",
+          "timeEnd" : "11:30"
+        },
+        {
+          "key" : "3",
+          "name" : "DBMS",
+          "timeStart" : "11:30",
+          "timeEnd" : "12:30"
+        },
+        {
+          "key" : "4",
+          "name" : "Recess",
+          "timeStart" : "12:30",
+          "timeEnd" : "13:30"
+        },
+        {
+          "key" : "5",
+          "name" : "OS",
+          "timeStart" : "13:30",
+          "timeEnd" : "14:30"
+        },
+        {
+          "key" : "6",
+          "name" : "Honor",
+          "timeStart" : "14:30",
+          "timeEnd" : "15:30"
+        }
+      ]
+    },
+    {
+      "day" : "saturday",
+      "classes" : [
+        {
+          "key" : "1",
+          "name" : "DBMS",
+          "timeStart" : "8:30",
+          "timeEnd" : "9:30"
+        },
+        {
+          "key" : "2",
+          "name" : "Lab ( A1/A3 - DH & V, A2/A4 - OS",
+          "timeStart" : "9:30",
+          "timeEnd" : "11:30"
+        },
+        {
+          "key" : "3",
+          "name" : "TOC",
+          "timeStart" : "11:30",
+          "timeEnd" : "12:30"
+        },
+        {
+          "key" : "4",
+          "name" : "Recess",
+          "timeStart" : "12:30",
+          "timeEnd" : "13:30"
+        },
+        {
+          "key" : "5",
+          "name" : "Honors",
+          "timeStart" : "13:30",
+          "timeEnd" : "15:30"
+        }
+      ]
+    }
+]
