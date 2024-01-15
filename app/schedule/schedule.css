@@ -5,8 +5,26 @@
     /*margin-top: 2vh;*/
     /*margin-left: 5vw;*/
     margin: 2vh auto;
-    background-color: #2b7df8;
+    background: radial-gradient(circle,#2b7df8b8 -30%, #99bdefd7 0%, #2b7df8b8 30%);
+    background-size: 400% 400%;
+    animation: gradientAnimation 10s ease infinite;
     box-shadow: 0px 0px 20px #2b7df8b8;
     border-radius: 10px;
     padding: 1px 10px 10px 10px;
+    perspective: 1000px;
+}
+
+.noclass{
+    text-shadow: none;
+}
+
+/* gradient animation */
+@keyframes gradientAnimation {
+    0% {
+        background-position: 100% 80%;
+    }
+    100% {
+        background-position: 0% 80%;
+    }
+    
 }

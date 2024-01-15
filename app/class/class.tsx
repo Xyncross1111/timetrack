@@ -1,5 +1,7 @@
-import {FC} from "react";
+"use client;"
+import { FC } from "react";
 import "./class.css"
+import Icon from "@/app/icon/icon";
 
 interface classProps {
     key: string;
@@ -22,12 +24,34 @@ const Class: FC<classProps> = (props: classProps) => {
     const timeStart = parseInt(props.timeStart);
     const timeEnd = parseInt(props.timeEnd);
 
-    if(hour >= timeStart && hour < timeEnd && props.date.getDate() === date.getDate()) {
+    // for dev purposes xd
+    // if (timeStart === 12 && timeEnd === 13) {
+    //     className += " active";
+    // }
+
+    if (hour >= timeStart && hour < timeEnd && props.date.getDate() === date.getDate()) {
         className += " active";
+    }
+    if (timeStart + 2 === timeEnd){
+        className += " lab";
+    }
+    if ((timeEnd <= hour && props.date.getDate() == date.getDate()) || props.date.getDate() < date.getDate()){
+        className += " past";
+    }
+    if (props.name === "Recess"){
+        className += " recess";
+    }
+    if(props.name === "Math" || props.name === "Physics" || props.name === "OOPS" || props.name === "English" || props.name === "UHV"){
+        return (
+            <div className={className}>
+                <h2>{props.name}</h2>
+                <p>{props.timeStart} - {props.timeEnd}</p>
+                <Icon class={props.name} />
+            </div>
+        );
     }
     return (
         <div className={className}>
-            {/*<p>start: {parseInt(props.timeStart)} curr: {hour} end: {parseInt(props.timeEnd)}</p>*/}
             <h2>{props.name}</h2>
             <p>{props.timeStart} - {props.timeEnd}</p>
         </div>

@@ -8,47 +8,27 @@
       "classes" : [
         {
           "key" : "1",
-
-          "name" : "TOC",
-
-          "timeStart" : "9:00",
-          "timeEnd" : "10:00"
-        },
-        {
-          "key" : "2",
-
-          "name" : "OS",
-          "timeStart" : "10:00",
-          "timeEnd" : "11:00"
-
-        },
-        {
-          "key" : "3",
-          "name" : "Recess",
-
-          "timeStart" : "1:00",
-          "timeEnd" : "12:00"
-        },
-        {
-          "key" : "4",
-          "name" : "DBMS",
-
+          "name" : "Math",
           "timeStart" : "12:00",
           "timeEnd" : "13:00"
         },
         {
-
-          "key" : "5",
-          "name" : "Lab (A1/A3 - OS, A2/A4 - DH&V)",
+          "key" : "2",
+          "name" : "Bio-Informatics",
           "timeStart" : "13:00",
+          "timeEnd" : "14:00"
+        },
+        {
+          "key" : "3",
+          "name" : "Recess",
+          "timeStart" : "14:00",
           "timeEnd" : "15:00"
         },
         {
-          "key" : "6",
-          "name" : "Open Elective",
+          "key" : "4",
+          "name" : "OOPS Lab",
           "timeStart" : "15:00",
-          "timeEnd" : "16:00"
-
+          "timeEnd" : "17:00"
         }
       ]
     },
@@ -57,44 +37,33 @@
       "classes" : [
         {
           "key" : "1",
-
-          "name" : "DBMS",
-
+          "name" : "Math Lab",
           "timeStart" : "9:00",
-          "timeEnd" : "10:00"
-        },
-        {
-          "key" : "2",
-
-          "name" : "OS",
-
-          "timeStart" : "10:00",
           "timeEnd" : "11:00"
         },
         {
-          "key" : "3",
-          "name" : "AI",
+          "key" : "2",
+          "name" : "Recess",
           "timeStart" : "11:00",
           "timeEnd" : "12:00"
         },
         {
-          "key" : "4",
-          "name" : "Recess",
+          "key" : "3",
+          "name" : "Physics",
           "timeStart" : "12:00",
           "timeEnd" : "13:00"
         },
         {
-          "key" : "5",
-          "name" : "Lab(A1/A3 - DBMS, A2/A4 - DH&V)",
+          "key" : "4",
+          "name" : "Math",
           "timeStart" : "13:00",
-          "timeEnd" : "15:00"
+          "timeEnd" : "14:00"
         },
         {
-          "key" : "6",
-          "name" : "Open Elective",
-          "timeStart" : "15:00",
-          "timeEnd" : "16:00"
-
+          "key" : "5",
+          "name" : "UHV",
+          "timeStart" : "14:00",
+          "timeEnd" : "15:00"
         }
       ]
     },
@@ -103,45 +72,21 @@
       "classes" : [
         {
           "key" : "1",
-
-          "name" : "CN",
-
+          "name" : "OOPS",
           "timeStart" : "9:00",
           "timeEnd" : "10:00"
         },
         {
           "key" : "2",
-
-          "name" : "TOC",
-
+          "name" : "Computer Workshop",
           "timeStart" : "10:00",
           "timeEnd" : "11:00"
         },
         {
           "key" : "3",
-          "name" : "AI",
+          "name" : "Bio-Informatics",
           "timeStart" : "11:00",
           "timeEnd" : "12:00"
-        },
-        {
-          "key" : "4",
-          "name" : "Recess",
-          "timeStart" : "12:00",
-          "timeEnd" : "13:00"
-        },
-        {
-          "key" : "5",
-
-          "name" : "Lab(A1/A3 - DH&V, A2/A4 - OS)",
-          "timeStart" : "13:00",
-          "timeEnd" : "15:00"
-        },
-          {
-          "key" : "6",
-          "name" : "Open Elective",
-          "timeStart" : "15:00",
-          "timeEnd" : "16:00"
-
         }
       ]
     },
@@ -150,39 +95,32 @@
       "classes" : [
         {
           "key" : "1",
-
-          "name" : "EVS",
-          "timeStart" : "9:00",
-          "timeEnd" : "11:00"
-        },
-        {
-          "key" : "2",
-          "name" : "AI",
-          "timeStart" : "11:00",
+          "name" : "CWS Lab",
+          "timeStart" : "10:00",
           "timeEnd" : "12:00"
         },
         {
-          "key" : "3",
+          "key" : "2",
           "name" : "Recess",
           "timeStart" : "12:00",
           "timeEnd" : "13:00"
         },
         {
-          "key" : "4",
-          "name" : "DBMS",
+          "key" : "3",
+          "name" : "OOPS",
           "timeStart" : "13:00",
           "timeEnd" : "14:00"
         },
         {
-          "key" : "5",
-          "name" : "OS",
+          "key" : "4",
+          "name" : "Computer Architecture",
           "timeStart" : "14:00",
           "timeEnd" : "15:00"
         },
         {
-          "key" : "6",
-          "name" : "Minor",
-          "timeStart" : "15:0",
+          "key" : "5",
+          "name" : "English",
+          "timeStart" : "15:00",
           "timeEnd" : "16:00"
         }
       ]
@@ -192,41 +130,33 @@
       "classes" : [
         {
           "key" : "1",
-          "name" : "CN",
-
+          "name" : "English",
           "timeStart" : "9:00",
           "timeEnd" : "10:00"
         },
         {
           "key" : "2",
-          "name" : "DS",
+          "name" : "Physics",
           "timeStart" : "10:00",
           "timeEnd" : "11:00"
         },
         {
           "key" : "3",
-          "name" : "Recess",
+          "name" : "Computer Architecture",
           "timeStart" : "11:00",
           "timeEnd" : "12:00"
         },
         {
           "key" : "4",
-          "name" : "Lab(A1/A3 - DH&V, A2/A4 - DBMS)",
+          "name" : "Recess",
           "timeStart" : "12:00",
-          "timeEnd" : "14:00"
+          "timeEnd" : "13:00"
         },
         {
           "key" : "5",
-          "name" : "Honor",
-          "timeStart" : "14:00",
+          "name" : "English Lab",
+          "timeStart" : "13:00",
           "timeEnd" : "15:00"
-        },
-        {
-          "key" : "6",
-          "name" : "Minor",
-          "timeStart" : "15:00",
-          "timeEnd" : "16:00"
-
         }
       ]
     },
@@ -235,41 +165,39 @@
       "classes" : [
         {
           "key" : "1",
-          "name" : "DBMS",
-
-          "timeStart" : "9:00",
+          "name" : "Physics Lab",
+          "timeStart" : "8:00",
           "timeEnd" : "10:00"
         },
         {
           "key" : "2",
-          "name" : "TOC",
+          "name" : "Recess",
           "timeStart" : "10:00",
           "timeEnd" : "11:00"
         },
         {
           "key" : "3",
-          "name" : "Recess",
+          "name" : "Math",
           "timeStart" : "11:00",
           "timeEnd" : "12:00"
         },
         {
           "key" : "4",
-          "name" : "CN",
+          "name" : "Physics",
           "timeStart" : "12:00",
           "timeEnd" : "13:00"
         },
         {
           "key" : "5",
-          "name" : "Honor",
+          "name" : "OOPS",
           "timeStart" : "13:00",
           "timeEnd" : "14:00"
         },
-          {
-          "key" : "5",
-          "name" : "Minor",
+        {
+          "key" : "6",
+          "name" : "Arts",
           "timeStart" : "14:00",
-          "timeEnd" : "15:00"
-
+          "timeEnd" : "16:00"
         }
       ]
     }

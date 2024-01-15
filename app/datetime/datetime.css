@@ -1,9 +1,12 @@
 .datetime{
+    width: 400px;
     margin-top: 1vh;
+    margin-bottom: 1vh;
     margin-left: 5vw;
     font-family: QuickSandLight, "Roboto Light", sans-serif;
     font-size: 1.3rem;
 }
+
 .datetime h2{
     font-size: 3rem;
     margin-bottom: -12px;
