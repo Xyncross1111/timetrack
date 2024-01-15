@@ -4,21 +4,30 @@ import Batch from "@/app/batch/batch";
 import Schedule from "@/app/schedule/schedule";
 import Datetime from "@/app/datetime/datetime";
 import Navigate from "@/app/navigate/navigate";
-import a1a2 from "../db/a12.json";
+import a1a2 from "../db/a1a2.json";
 import a3 from "../db/a3.json";
 import './globals.css';
 
 export default function Home() {
 
-    let currDate: Date = new Date();
+    const [currDateTime, setCurrDateTime] = useState(new Date());
 
-    const [date, setDate] = useState(currDate);
-    const [weekDay, setWeekDay] = useState(currDate.getDay())
-
+    const [date, setDate] = useState(currDateTime);
+    const [weekDay, setWeekDay] = useState(currDateTime.getDay());
     const classList = a1a2[weekDay];
     const [classes, setClasses] = useState(classList);
 
     const [batch, setBatch] = useState("A1/A2");
+
+    const updateTime = () => {
+        const newDateTime = new Date();
+        setCurrDateTime(newDateTime);
+    };
+
+    useEffect(() => {
+        const intervalId = setInterval(updateTime, 1000);
+        return () => clearInterval(intervalId);
+    }, []);
 
     useEffect(() => {
         if (typeof window !== "undefined") {
