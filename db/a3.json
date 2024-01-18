@@ -72,13 +72,13 @@
       "classes" : [
         {
           "key" : "1",
-          "name" : "OOPS",
+          "name" : "Computer Workshop",
           "timeStart" : "9:00",
           "timeEnd" : "10:00"
         },
         {
           "key" : "2",
-          "name" : "Computer Workshop",
+          "name" : "OOP",
           "timeStart" : "10:00",
           "timeEnd" : "11:00"
         },
