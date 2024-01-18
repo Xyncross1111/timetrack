@@ -1,3 +1,4 @@
+"use client";
 import React, { FC } from "react";
 import "./batch.css";
 import a1a2 from "../../db/a12.json";
