@@ -1,7 +1,7 @@
 "use client";
 import React, { FC } from "react";
 import "./batch.css";
-import a1a2 from "../../db/a12.json";
+import a1a2 from "../../db/a1a2.json";
 import a3 from "../../db/a3.json";
 
 interface BatchProps {

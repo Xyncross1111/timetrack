@@ -1,5 +1,5 @@
 "use client;"
-import { FC } from "react";
+import { FC, useState, useEffect} from "react";
 import "./class.css"
 import Icon from "@/app/icon/icon";
 
@@ -15,11 +15,21 @@ const Class: FC<classProps> = (props: classProps) => {
 
     let className = `class - ${props.key} classes`;
 
-    const date = new Date();
-    let hour = date.getHours();
-    const min = date.getMinutes();
+    const [currDateTime, setCurrDateTime] = useState(new Date());
 
-    hour += min / 60;
+    const date = new Date();
+    const [hour, setHour] = useState(currDateTime.getHours() + currDateTime.getMinutes()/60);
+
+    const updateTime = () => {
+        const newDateTime = new Date();
+        setCurrDateTime(newDateTime);
+        setHour(newDateTime.getHours() + newDateTime.getMinutes()/60);
+    };
+
+    useEffect(() => {
+        const intervalId = setInterval(updateTime, 1000);
+        return () => clearInterval(intervalId);
+    }, []);
 
     const timeStart = parseInt(props.timeStart);
     const timeEnd = parseInt(props.timeEnd);
