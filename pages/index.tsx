@@ -11,22 +11,23 @@ import { ClassList } from "@/app/types/types" ;
 
 export default function Home() {
 
+    const [data, setData] = useState(a3);
 
-    // class switching works. both a1a2 are not loaded on first page load. need to toggle to load them to data var
+    // console.log(data);
 
-    const [data, setData] = useState(a1a2);
+    const [date, setDate] = useState(new Date());
 
-    const [currDateTime, setCurrDateTime] = useState(new Date());
-
-    const [date, setDate] = useState(currDateTime);
-
-    const [weekDay, setWeekDay] = useState(currDateTime.getDay());
+    const [weekDay, setWeekDay] = useState(date.getDay());
 
     const [classes, setClasses] = useState(data[weekDay]);
 
+    useEffect( () => {
+        setClasses(data[weekDay]);
+    }, [data])
+
 
     useEffect(() => {
-        const intervalId = setInterval(updateTime, 60000);
+        const intervalId = setInterval(updateTime, 1000, setDate);
         return () => clearInterval(intervalId);
     }, []);
 
@@ -57,14 +58,13 @@ export default function Home() {
         setWeekDay(currDay);
     }
 
-
     return (
         <>
             <h1 className={"title"}>TimeTrack</h1>
             <h2 className={"info"}><a href="https://github.com/Xyncross1111/timetrack">Repo</a></h2>
             <div className="datetime-batch-container">
                 <Datetime date={date} />
-                <Batch setData={setData} weekDay={weekDay} />
+                <Batch setData={setData} />
             </div>
             <Navigate handlePrev={handlePrev} handleNext={handleNext} />
             <Schedule classes={classes.classes} day={classes.day} date={date} />
@@ -72,23 +72,7 @@ export default function Home() {
     )
 }
 
-const setLocalStorage = (batch: string, setBatch: Dispatch<SetStateAction<string>>, setClasses: any, weekDay: number) => {
-
-    if (window == undefined) return;
-
-    const storedBatch = localStorage.getItem("batch");
-
-    if (storedBatch){
-
-        setBatch(storedBatch);
-
-        if (storedBatch === "A1/A2") setClasses(a1a2[weekDay]);
-        else setClasses(a3[weekDay]);
-    }
-
-}
-
-const updateTime = (setCurrDateTime: Dispatch<SetStateAction<Date>>) => {
+const updateTime = (setDate: Dispatch<SetStateAction<Date>>) => {
     const newDateTime = new Date();
-    setCurrDateTime(newDateTime);
+    setDate(newDateTime);
 };
