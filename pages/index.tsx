@@ -13,8 +13,6 @@ export default function Home() {
 
     const [data, setData] = useState(a3);
 
-    // console.log(data);
-
     const [date, setDate] = useState(new Date());
 
     const [weekDay, setWeekDay] = useState(date.getDay());
@@ -25,11 +23,16 @@ export default function Home() {
         setClasses(data[weekDay]);
     }, [data])
 
+    // Need two sets of dates. one to hold the current date and one to hold the date that is being navigated to.
+    // This is because the useEffect hook resets date to present date every second.
 
-    useEffect(() => {
-        const intervalId = setInterval(updateTime, 1000, setDate);
-        return () => clearInterval(intervalId);
-    }, []);
+    // useEffect(() => {
+    //     const intervalId = setInterval(setDate, 1000, (prevDate: Date) => {
+    //         return prevDate.setMinutes(prevDate.getMinutes());
+    //     });
+    //
+    //     return () => clearInterval(intervalId);
+    // }, []);
 
     const handleNext = () => {
 

@@ -13,7 +13,7 @@ const Batch: FC<BatchProps> = ({ setData, }: BatchProps) => {
     const [batch, setBatch] = useState("A1/A2");
 
     useEffect(() => {
-        setLocalStorage(batch, setBatch, setData);
+        setLocalStorage(setBatch, setData);
     }, []);
 
     useEffect(() => {
@@ -47,7 +47,7 @@ const Batch: FC<BatchProps> = ({ setData, }: BatchProps) => {
     );
 };
 
-const setLocalStorage = (batch: string, setBatch: Dispatch<SetStateAction<string>>, setData: any,) => {
+const setLocalStorage = (setBatch: Dispatch<SetStateAction<string>>, setData: any,) => {
 
     if (window == undefined) return;
 
