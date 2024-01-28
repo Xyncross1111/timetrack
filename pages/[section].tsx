@@ -17,7 +17,6 @@ export default function Home() {
     const [data, setData] = useState() as any;
 
     let currDate: Date = new Date();
-
     const [date, setDate] = useState(currDate);
     const [weekDay, setWeekDay] = useState(currDate.getDay())
 

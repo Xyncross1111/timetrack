@@ -8,16 +8,15 @@ interface classProps {
     name: string;
     timeStart: string;
     timeEnd: string;
-
     date: Date;
 }
-const Class: FC<classProps> = (props: classProps) => {
+const Class: FC<classProps> = ({key, name, timeStart, timeEnd, date}) => {
 
-    let className = `class - ${props.key} classes`;
+    let className = `class - ${key} classes`;
 
     const [currDateTime, setCurrDateTime] = useState(new Date());
 
-    const date = new Date();
+    const currDate = new Date();
     const [hour, setHour] = useState(currDateTime.getHours() + currDateTime.getMinutes()/60);
 
     const updateTime = () => {
@@ -31,39 +30,38 @@ const Class: FC<classProps> = (props: classProps) => {
         return () => clearInterval(intervalId);
     }, []);
 
-    const timeStart = parseInt(props.timeStart);
-    const timeEnd = parseInt(props.timeEnd);
+    const begin = parseInt(timeStart);
+    const end = parseInt(timeEnd);
 
-    // for dev purposes xd
-    // if (timeStart === 12 && timeEnd === 13) {
-    //     className += " active";
-    // }
-
-    if (hour >= timeStart && hour < timeEnd && props.date.getDate() === date.getDate()) {
+    if (hour >= begin && hour < end && currDate.getDate() === date.getDate()) {
         className += " active";
     }
-    if (timeStart + 2 === timeEnd){
+    if (begin + 2 === end){
         className += " lab";
     }
-    if ((timeEnd <= hour && props.date.getDate() == date.getDate()) || props.date.getDate() < date.getDate()){
+
+    // Removed (  date.getDate() < date.getDate()  ) which made classes of the previous days of the week
+    // appear as past classes. Refactor in future to add this feature again.
+
+    if ((end <= hour && currDate.getDate() === date.getDate())){
         className += " past";
     }
-    if (props.name === "Recess"){
+    if (name === "Recess"){
         className += " recess";
     }
-    if(props.name === "Math" || props.name === "Physics" || props.name === "OOPS" || props.name === "English" || props.name === "UHV"){
+    if(name === "Math" || name === "Physics" || name === "OOPS" || name === "English" || name === "UHV"){
         return (
             <div className={className}>
-                <h2>{props.name}</h2>
-                <p>{props.timeStart} - {props.timeEnd}</p>
-                <Icon class={props.name} />
+                <h2>{name}</h2>
+                <p>{begin} - {end}</p>
+                <Icon class={name} />
             </div>
         );
     }
     return (
         <div className={className}>
-            <h2>{props.name}</h2>
-            <p>{props.timeStart} - {props.timeEnd}</p>
+            <h2>{name}</h2>
+            <p>{begin} - {end}</p>
         </div>
     );
 }
