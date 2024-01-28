@@ -1,0 +1,222 @@
+[
+  {
+    "day" : "sunday",
+    "classes" : []
+  },
+  {
+    "day" : "monday",
+    "classes" : [
+      {
+        "key" : "1",
+        "name" : "English",
+        "timeStart" : "12:00",
+        "timeEnd" : "13:00"
+      },
+      {
+        "key" : "2",
+        "name" : "OOPS",
+        "timeStart" : "12:00",
+        "timeEnd" : "13:00"
+      },
+      {
+        "key" : "3",
+        "name" : "Computer Architechture",
+        "timeStart" : "13:00",
+        "timeEnd" : "14:00"
+      },
+      {
+        "key" : "4",
+        "name" : "Recess",
+        "timeStart" : "14:00",
+        "timeEnd" : "15:00"
+      },
+      {
+        "key" : "5",
+        "name" : "Eng(B3) / CWS(B1/B2) Lab",
+        "timeStart" : "15:00",
+        "timeEnd" : "17:00"
+      }
+    ]
+  },
+  {
+    "day" : "tuesday",
+    "classes" : [
+      {
+        "key" : "1",
+        "name" : "Eng(B1/B2) / CWS(B3) Lab",
+        "timeStart" : "9:00",
+        "timeEnd" : "11:00"
+      },
+      {
+        "key" : "2",
+        "name" : "Recess",
+        "timeStart" : "11:00",
+        "timeEnd" : "12:00"
+      },
+      {
+        "key" : "3",
+        "name" : "Library",
+        "timeStart" : "12:00",
+        "timeEnd" : "13:00"
+      },
+      {
+        "key" : "4",
+        "name" : "Math",
+        "timeStart" : "13:00",
+        "timeEnd" : "14:00"
+      },
+      {
+        "key" : "5",
+        "name" : "OOPS",
+        "timeStart" : "14:00",
+        "timeEnd" : "15:00"
+      }
+    ]
+  },
+  {
+    "day" : "wednesday",
+    "classes" : [
+      {
+        "key" : "1",
+        "name" : "PHY (B1/B2) Lab",
+        "timeStart" : "9:00",
+        "timeEnd" : "11:00"
+      },
+      {
+        "key" : "2",
+        "name" : "Recess",
+        "timeStart" : "11:00",
+        "timeEnd" : "12:00"
+      },
+      {
+        "key" : "3",
+        "name" : "Computer Architecture",
+        "timeStart" : "12:00",
+        "timeEnd" : "13:00"
+      },
+      {
+        "key" : "4",
+        "name" : "CWS",
+        "timeStart" : "13:00",
+        "timeEnd" : "14:00"
+      },
+      {
+        "key" : "5",
+        "name" : "Math",
+        "timeStart" : "14:00",
+        "timeEnd" : "15:00"
+      }
+    ]
+  },
+  {
+    "day" : "thursday",
+    "classes" : [
+      {
+        "key" : "1",
+        "name" : "English",
+        "timeStart" : "9:00",
+        "timeEnd" : "10:00"
+      },
+      {
+        "key" : "2",
+        "name" : "OOPS",
+        "timeStart" : "10:00",
+        "timeEnd" : "11:00"
+      },
+      {
+        "key" : "3",
+        "name" : "Physics",
+        "timeStart" : "11:00",
+        "timeEnd" : "12:00"
+      },
+      {
+        "key" : "4",
+        "name" : "Recess",
+        "timeStart" : "12:00",
+        "timeEnd" : "13:00"
+      },
+      {
+        "key" : "5",
+        "name" : "Math(B3) / OOPS(B1/B2) Lab",
+        "timeStart" : "13:00",
+        "timeEnd" : "15:00"
+      }
+    ]
+  },
+  {
+    "day" : "friday",
+    "classes" : [
+      {
+        "key" : "1",
+        "name" : "Bio-Informatics",
+        "timeStart" : "8:00",
+        "timeEnd" : "9:00"
+      },
+      {
+        "key" : "2",
+        "name" : "UHV",
+        "timeStart" : "9:00",
+        "timeEnd" : "10:00"
+      },
+      {
+        "key" : "3",
+        "name" : "Math",
+        "timeStart" : "10:00",
+        "timeEnd" : "11:00"
+      },
+      {
+        "key" : "4",
+        "name" : "Physics",
+        "timeStart" : "11:00",
+        "timeEnd" : "12:00"
+      },
+      {
+        "key" : "5",
+        "name" : "Recess",
+        "timeStart" : "12:00",
+        "timeEnd" : "13:00"
+      },
+      {
+        "key" : "6",
+        "name" : "PHY (B3) Lab",
+        "timeStart" : "13:00",
+        "timeEnd" : "15:00"
+      }
+    ]
+  },
+  {
+    "day" : "saturday",
+    "classes" : [
+      {
+        "key" : "1",
+        "name" : "Physics",
+        "timeStart" : "9:00",
+        "timeEnd" : "10:00"
+      },
+      {
+        "key" : "2",
+        "name" : "Math(B1/B2) / OOPS (B3)",
+        "timeStart" : "10:00",
+        "timeEnd" : "12:00"
+      },
+      {
+        "key" : "3",
+        "name" : "Recess",
+        "timeStart" : "12:00",
+        "timeEnd" : "13:00"
+      },
+      {
+        "key" : "4",
+        "name" : "Bio-Informatics",
+        "timeStart" : "13:00",
+        "timeEnd" : "14:00"
+      },
+      {
+        "key" : "5",
+        "name" : "Arts",
+        "timeStart" : "14:00",
+        "timeEnd" : "16:00"
+      }
+    ]
+  }
+]
