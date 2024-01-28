@@ -1,13 +1,15 @@
 "use client";
 import { useState, useEffect, SetStateAction, Dispatch } from "react";
+
 import Batch from "@/app/batch/batch";
 import Schedule from "@/app/schedule/schedule";
 import Datetime from "@/app/datetime/datetime";
 import Navigate from "@/app/navigate/navigate";
-import a1a2 from "../db/a1a2.json";
+// import a1a2 from "../db/a1a2.json";
 import a3 from "../db/a3.json";
+import Header from "@/app/Head/Head";
 import './globals.css';
-import { ClassList } from "@/app/types/types" ;
+// import { ClassList } from "@/app/types/types" ;
 
 export default function Home() {
 
@@ -63,6 +65,7 @@ export default function Home() {
 
     return (
         <>
+            <Header />
             <h1 className={"title"}>TimeTrack</h1>
             <h2 className={"info"}><a href="https://github.com/Xyncross1111/timetrack">Repo</a></h2>
             <div className="datetime-batch-container">
@@ -75,7 +78,7 @@ export default function Home() {
     )
 }
 
-const updateTime = (setDate: Dispatch<SetStateAction<Date>>) => {
-    const newDateTime = new Date();
-    setDate(newDateTime);
-};
+// const updateTime = (setDate: Dispatch<SetStateAction<Date>>) => {
+//     const newDateTime = new Date();
+//     setDate(newDateTime);
+// };
