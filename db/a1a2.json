@@ -148,13 +148,13 @@
         },
         {
           "key" : "2",
-          "name" : "Computer Architecture",
+          "name" : "Physics",
           "timeStart" : "10:00",
           "timeEnd" : "11:00"
         },
         {
           "key" : "3",
-          "name" : "Physics",
+          "name" : "Computer Architecture",
           "timeStart" : "11:00",
           "timeEnd" : "12:00"
         },
