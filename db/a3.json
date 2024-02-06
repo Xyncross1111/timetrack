@@ -49,13 +49,13 @@
         },
         {
           "key" : "3",
-          "name" : "Physics",
+          "name" : "Math",
           "timeStart" : "12:00",
           "timeEnd" : "13:00"
         },
         {
           "key" : "4",
-          "name" : "Math",
+          "name" : "Physics",
           "timeStart" : "13:00",
           "timeEnd" : "14:00"
         },
