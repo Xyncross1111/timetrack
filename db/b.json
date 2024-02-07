@@ -195,15 +195,15 @@
       },
       {
         "key" : "2",
-        "name" : "Math(B1/B2) / OOPS (B3)",
+        "name" : "Recess",
         "timeStart" : "10:00",
-        "timeEnd" : "12:00"
+        "timeEnd" : "11:00"
       },
       {
-        "key" : "3",
-        "name" : "Recess",
-        "timeStart" : "12:00",
-        "timeEnd" : "13:00"
+      "key" : "3",
+      "name" : "Math(B1/B2) / OOPS (B3)",
+      "timeStart" : "11:00",
+      "timeEnd" : "13:00"
       },
       {
         "key" : "4",

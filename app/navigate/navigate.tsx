@@ -15,7 +15,7 @@ const Navigate: FC<navigateProps> = (props: navigateProps) => {
     }
 
     return (
-        <nav className={"class-buttons"}>
+        <nav className={"class-buttons flex max-md:justify-between items-center"}>
             <button className={"prev"} onClick={handlePrev}>
                 {"◀"} Prev
             </button>
