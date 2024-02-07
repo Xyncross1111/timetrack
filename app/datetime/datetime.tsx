@@ -12,9 +12,9 @@ const Datetime:FC<datetimeProps> = (props: datetimeProps) => {
     const dayNum = date.toLocaleDateString('en-us', { day: "numeric" });
 
     return (
-        <div className="datetime">
+        <div className="datetime font-semibold">
             <h2>{month} {dayNum}</h2>
-            <h3>{day}</h3>
+            <h3 className="text-black/75">{day}</h3>
         </div>
     );
 }
