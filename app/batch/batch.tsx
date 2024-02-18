@@ -17,7 +17,7 @@ const Batch: FC<BatchProps> = ({ setData,section }: BatchProps) => {
 
     useEffect(() => {
         setLocalStorage(setBatch, setData, data12, data3);
-    }, []);
+    }, [section]);
 
     useEffect(() => {
         if (window !== undefined) localStorage.setItem("batch", batch);

@@ -21,6 +21,8 @@ export default function Home() {
 
     const [classes, setClasses] = useState(data[weekDay]);
 
+    const [section, setSection] = useState("a");
+
     const getClasses = (day: number) => {
         const classList = data[day];
         setClasses(classList);
@@ -29,9 +31,10 @@ export default function Home() {
     useEffect( () => {
         setClasses(data[weekDay]);
     }, [data])
+    
     useEffect(() => {
         if(!router.isReady) return;
-        setData(require(`../db/${router.query.section}3.json`));
+        setSection(router.query.section as string);
     }, [router.isReady, router.query.section, weekDay])
 
     const handleNext = () => {
@@ -68,7 +71,7 @@ export default function Home() {
             <h2 className={"info"}><a href="https://github.com/Xyncross1111/timetrack">Repo</a></h2>
             <div className="datetime-batch-container">
                 <Datetime date={date} />
-                <Batch setData={setData} section={router.isReady ? `${router.query.section}`: "a"}/>
+                <Batch setData={setData} section={section}/>
             </div>
             <Navigate handlePrev={handlePrev} handleNext={handleNext} />
             <Schedule classes={classes.classes} day={classes.day} date={date} />
