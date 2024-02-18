@@ -33,21 +33,28 @@ const Class: FC<classProps> = ({key, name, timeStart, timeEnd, date}) => {
     const begin = parseInt(timeStart);
     const end = parseInt(timeEnd);
 
-    if (hour >= begin && hour < end && currDate.getDate() === date.getDate()) {
+    if (hour >= begin && hour < end && currDate.getDate() === date.getDate() && currDate.getMonth() === date.getMonth() && currDate.getFullYear() === date.getFullYear()){
         className += " active";
     }
     if (begin + 2 === end){
         className += " lab";
     }
-
-    // Removed (  date.getDate() < date.getDate()  ) which made classes of the previous days of the week
-    // appear as past classes. Refactor in future to add this feature again.
-
-    if ((end <= hour && currDate.getDate() === date.getDate())){
-        className += " past";
-    }
     if (name === "Recess"){
         className += " recess";
+    }
+
+    // past classses
+    if ((end <= hour && currDate.getDate() === date.getDate() && currDate.getMonth() === date.getMonth() && currDate.getFullYear() === date.getFullYear())){
+        className += " past";
+    }
+    if(date.getDate() < currDate.getDate() && date.getMonth() === currDate.getMonth() && date.getFullYear() === currDate.getFullYear()){
+        className += " past";
+    }
+    if(date.getMonth() < currDate.getMonth() && date.getFullYear() === currDate.getFullYear()){
+        className += " past";
+    }
+    if(date.getFullYear() < currDate.getFullYear()){
+        className += " past";
     }
     if(name === "Math" || name === "Physics" || name === "OOPS" || name === "English" || name === "UHV"){
         return (
