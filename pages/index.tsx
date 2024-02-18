@@ -70,7 +70,7 @@ export default function Home() {
             <h2 className={"info"}><a href="https://github.com/Xyncross1111/timetrack">Repo</a></h2>
             <div className="datetime-batch-container">
                 <Datetime date={date} />
-                <Batch setData={setData} />
+                <Batch setData={setData} section={"a"}/>
             </div>
             <Navigate handlePrev={handlePrev} handleNext={handleNext} />
             <Schedule classes={classes.classes} day={classes.day} date={date} />
