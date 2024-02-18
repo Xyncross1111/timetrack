@@ -10,13 +10,13 @@ interface BatchProps {
 
 const Batch: FC<BatchProps> = ({ setData,section }: BatchProps) => {
 
-    const data12 = require(`../../db/${section}1${section}2.json`);
-    const data3 = require(`../../db/${section}3.json`);
+    const data1 = require(`../../db/${section}1.json`);
+    const data2 = require(`../../db/${section}2.json`);
 
-    const [batch, setBatch] = useState("12");
+    const [batch, setBatch] = useState("1");
 
     useEffect(() => {
-        setLocalStorage(setBatch, setData, data12, data3);
+        setLocalStorage(setBatch, setData, data1, data2);
     }, [section]);
 
     useEffect(() => {
@@ -24,33 +24,50 @@ const Batch: FC<BatchProps> = ({ setData,section }: BatchProps) => {
     }, [batch]);
 
     const handleBatch = () => {
-        if (batch === "12") {
+        if (batch === "1") {
 
-            setBatch("3");
-            setData(data3);
+            setBatch("2");
+            setData(data2);
 
         } else {
 
-            setBatch("12");
-            setData(data12);
+            setBatch("1");
+            setData(data1);
         }
     };
+
+    interface BatchNames {
+        [key: string]: string;
+    }
+
+    const batchNames: BatchNames = {
+        "a1": "A1/A2",
+        "a2": "A3",
+        "b1": "B1/B2",
+        "b2": "B3",
+        "c1": "C1/C2",
+        "c2": "C3",
+        "ds4a1": "A1/A3",
+        "ds4a2": "A2/A4",
+        "ds4b1": "B1/B3",
+        "ds4b2": "B2/B4"
+    }
 
     return (
         <div className="container">
             <div className="text">
-                <p className={`${batch === "12" ? "selected" : "not-selected"}`}>{section.toUpperCase()}1/{section.toUpperCase()}2</p>
-                <p className={`${batch === "3" ? "selected" : "not-selected"}`}>{section.toUpperCase()}3</p>
+                <p className={`${batch === "1" ? "selected" : "not-selected"}`}>{batchNames[section+1]}</p>
+                <p className={`${batch === "2" ? "selected" : "not-selected"}`}>{batchNames[section+2]}</p>
             </div>
             <label className="switch">
-                <input type="checkbox" onChange={handleBatch} checked={batch === "3"}/>
+                <input type="checkbox" onChange={handleBatch} checked={batch === "2"}/>
                 <span className="slider round"></span>
             </label>
         </div>
     );
 };
 
-const setLocalStorage = (setBatch: Dispatch<SetStateAction<string>>, setData: any, data12: any, data3: any) => {
+const setLocalStorage = (setBatch: Dispatch<SetStateAction<string>>, setData: any, data1: any, data2: any) => {
 
     if (window == undefined) return;
 
@@ -60,8 +77,8 @@ const setLocalStorage = (setBatch: Dispatch<SetStateAction<string>>, setData: an
 
         setBatch(storedBatch);
 
-        if (storedBatch === "12") setData(data12);
-        else setData(data3);
+        if (storedBatch === "1") setData(data1);
+        else setData(data2);
     }
 }
 
