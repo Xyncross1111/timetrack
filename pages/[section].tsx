@@ -1,15 +1,11 @@
 "use client";
 import {useState, useEffect} from "react";
 import { useRouter } from 'next/router';
+import Header from "@/app/Head/Head";
 import Schedule from "@/app/schedule/schedule";
 import Datetime from "@/app/datetime/datetime";
 import Navigate from "@/app/navigate/navigate";
 import './globals.css';
-
-interface classList {
-    classes: [];
-    day: string;
-}
 
 export default function Home() {
 
@@ -17,7 +13,6 @@ export default function Home() {
     const [data, setData] = useState() as any;
 
     let currDate: Date = new Date();
-
     const [date, setDate] = useState(currDate);
     const [weekDay, setWeekDay] = useState(currDate.getDay())
 
@@ -69,12 +64,13 @@ export default function Home() {
     }
 
     return (
-        <>   
-        <h1 className={"title"}>TimeTrack</h1>
-        <h2 className={"info"}><a href="https://github.com/Xyncross1111/timetrack">Repo</a></h2>
-        <Datetime date={date}/>
-        <Navigate handlePrev={handlePrev} handleNext={handleNext} />
-        <Schedule classes={classes.classes} day={classes.day} date={date} />
-    </>
-  )
+        <>
+            <Header />
+            <h1 className={"title"}>TimeTrack</h1>
+            <h2 className={"info"}><a href="https://github.com/Xyncross1111/timetrack">Repo</a></h2>
+            <Datetime date={date}/>
+            <Navigate handlePrev={handlePrev} handleNext={handleNext} />
+            <Schedule classes={classes.classes} day={classes.day} date={date} />
+        </>
+    )
 }
