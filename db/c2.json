@@ -32,7 +32,7 @@
       },
       {
         "key" : "5",
-        "name" : "Phy(C3) Lab",
+        "name" : "Physics Lab",
         "timeStart" : "13:00",
         "timeEnd" : "15:00"
       }
@@ -43,7 +43,7 @@
     "classes" : [
       {
         "key" : "1",
-        "name" : "Eng(C1/C2) / CWS(C3) Lab",
+        "name" : "CWS Lab",
         "timeStart" : "11:00",
         "timeEnd" : "13:00"
       },
@@ -102,7 +102,7 @@
       },
       {
         "key" : "5",
-        "name" : "Math (C1/C2) / OOPs (C3) Lab",
+        "name" : "OOPS Lab",
         "timeStart" : "13:00",
         "timeEnd" : "15:00"
       }
@@ -122,18 +122,6 @@
         "name" : "Math",
         "timeStart" : "10:00",
         "timeEnd" : "11:00"
-      },
-      {
-        "key" : "3",
-        "name" : "Recess",
-        "timeStart" : "11:00",
-        "timeEnd" : "12:00"
-      },
-      {
-        "key" : "4",
-        "name" : "PHY(C1/C2) Lab",
-        "timeStart" : "12:00",
-        "timeEnd" : "14:00"
       }
     ]
   },
@@ -160,7 +148,7 @@
       },
       {
         "key" : "4",
-        "name" : "Math (C3) / OOPS (C1/C2) Lab",
+        "name" : "Math Lab",
         "timeStart" : "12:00",
         "timeEnd" : "14:00"
       },
@@ -177,7 +165,7 @@
     "classes" : [
       {
         "key" : "1",
-        "name" : "Eng(C3) / CWS (C1/C2) Lab / ",
+        "name" : "English Lab",
         "timeStart" : "8:00",
         "timeEnd" : "10:00"
       },

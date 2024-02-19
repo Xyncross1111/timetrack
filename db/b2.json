@@ -32,7 +32,7 @@
       },
       {
         "key" : "5",
-        "name" : "Eng(B3) / CWS(B1/B2) Lab",
+        "name" : "English Lab",
         "timeStart" : "15:00",
         "timeEnd" : "17:00"
       }
@@ -43,7 +43,7 @@
     "classes" : [
       {
         "key" : "1",
-        "name" : "Eng(B1/B2) / CWS(B3) Lab",
+        "name" : "CWS Lab",
         "timeStart" : "9:00",
         "timeEnd" : "11:00"
       },
@@ -78,30 +78,18 @@
     "classes" : [
       {
         "key" : "1",
-        "name" : "PHY (B1/B2) Lab",
-        "timeStart" : "9:00",
-        "timeEnd" : "11:00"
-      },
-      {
-        "key" : "2",
-        "name" : "Recess",
-        "timeStart" : "11:00",
-        "timeEnd" : "12:00"
-      },
-      {
-        "key" : "3",
         "name" : "Computer Architecture",
         "timeStart" : "12:00",
         "timeEnd" : "13:00"
       },
       {
-        "key" : "4",
+        "key" : "2",
         "name" : "CWS",
         "timeStart" : "13:00",
         "timeEnd" : "14:00"
       },
       {
-        "key" : "5",
+        "key" : "3",
         "name" : "Math",
         "timeStart" : "14:00",
         "timeEnd" : "15:00"
@@ -137,7 +125,7 @@
       },
       {
         "key" : "5",
-        "name" : "Math(B3) / OOPS(B1/B2) Lab",
+        "name" : "Math Lab",
         "timeStart" : "13:00",
         "timeEnd" : "15:00"
       }
@@ -178,7 +166,7 @@
       },
       {
         "key" : "6",
-        "name" : "PHY (B3) Lab",
+        "name" : "Physics Lab",
         "timeStart" : "13:00",
         "timeEnd" : "15:00"
       }
@@ -201,7 +189,7 @@
       },
       {
       "key" : "3",
-      "name" : "Math(B1/B2) / OOPS (B3)",
+      "name" : "OOPS Lab",
       "timeStart" : "11:00",
       "timeEnd" : "13:00"
       },

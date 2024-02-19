@@ -9,38 +9,38 @@
         {
           "key" : "1",
 
-          "name" : "TOC",
-
+          "name" : "DH&V Lab",
           "timeStart" : "9:00",
-          "timeEnd" : "10:00"
-        },
-        {
-          "key" : "2",
-
-          "name" : "OS",
-          "timeStart" : "10:00",
           "timeEnd" : "11:00"
 
         },
         {
-          "key" : "3",
-          "name" : "Recess",
+          "key" : "2",
+          "name" : "OS",
 
-          "timeStart" : "1:00",
+
+          "timeStart" : "11:00",
           "timeEnd" : "12:00"
         },
         {
-          "key" : "4",
-          "name" : "DBMS",
 
+          "key" : "3",
+
+          "name" : "Recess",
           "timeStart" : "12:00",
           "timeEnd" : "13:00"
         },
         {
 
-          "key" : "5",
-          "name" : "Lab (A1/A3 - OS, A2/A4 - DH&V)",
+          "key" : "4",
+          "name" : "TOC",
           "timeStart" : "13:00",
+          "timeEnd" : "14:00"
+        },
+        {
+          "key" : "5",
+          "name" : "DBMS",
+          "timeStart" : "14:00",
           "timeEnd" : "15:00"
         },
         {
@@ -58,35 +58,36 @@
         {
           "key" : "1",
 
-          "name" : "DBMS",
-
+          "name" : "OS Lab",
           "timeStart" : "9:00",
-          "timeEnd" : "10:00"
-        },
-        {
-          "key" : "2",
-
-          "name" : "OS",
-
-          "timeStart" : "10:00",
           "timeEnd" : "11:00"
         },
         {
-          "key" : "3",
+          "key" : "2",
           "name" : "AI",
+
           "timeStart" : "11:00",
           "timeEnd" : "12:00"
         },
         {
-          "key" : "4",
+
+          "key" : "3",
+
           "name" : "Recess",
           "timeStart" : "12:00",
           "timeEnd" : "13:00"
         },
         {
-          "key" : "5",
-          "name" : "Lab(A1/A3 - DBMS, A2/A4 - DH&V)",
+
+          "key" : "4",
+          "name" : "OS",
           "timeStart" : "13:00",
+          "timeEnd" : "14:00"
+        },
+        {
+          "key" : "5",
+          "name" : "DBMS",
+          "timeStart" : "14:00",
           "timeEnd" : "15:00"
         },
         {
@@ -104,7 +105,7 @@
         {
           "key" : "1",
 
-          "name" : "CN",
+          "name" : "OS",
 
           "timeStart" : "9:00",
           "timeEnd" : "10:00"
@@ -112,14 +113,15 @@
         {
           "key" : "2",
 
-          "name" : "TOC",
+          "name" : "DBMS",
 
           "timeStart" : "10:00",
           "timeEnd" : "11:00"
         },
         {
           "key" : "3",
-          "name" : "AI",
+          "name" : "CN",
+
           "timeStart" : "11:00",
           "timeEnd" : "12:00"
         },
@@ -132,11 +134,11 @@
         {
           "key" : "5",
 
-          "name" : "Lab(A1/A3 - DH&V, A2/A4 - OS)",
+          "name" : "DH&V Lab",
           "timeStart" : "13:00",
           "timeEnd" : "15:00"
         },
-          {
+        {
           "key" : "6",
           "name" : "Open Elective",
           "timeStart" : "15:00",
@@ -151,55 +153,13 @@
         {
           "key" : "1",
 
-          "name" : "EVS",
-          "timeStart" : "9:00",
-          "timeEnd" : "11:00"
-        },
-        {
-          "key" : "2",
           "name" : "AI",
-          "timeStart" : "11:00",
-          "timeEnd" : "12:00"
-        },
-        {
-          "key" : "3",
-          "name" : "Recess",
-          "timeStart" : "12:00",
-          "timeEnd" : "13:00"
-        },
-        {
-          "key" : "4",
-          "name" : "DBMS",
-          "timeStart" : "13:00",
-          "timeEnd" : "14:00"
-        },
-        {
-          "key" : "5",
-          "name" : "OS",
-          "timeStart" : "14:00",
-          "timeEnd" : "15:00"
-        },
-        {
-          "key" : "6",
-          "name" : "Minor",
-          "timeStart" : "15:0",
-          "timeEnd" : "16:00"
-        }
-      ]
-    },
-    {
-      "day" : "friday",
-      "classes" : [
-        {
-          "key" : "1",
-          "name" : "CN",
-
           "timeStart" : "9:00",
           "timeEnd" : "10:00"
         },
         {
           "key" : "2",
-          "name" : "DS",
+          "name" : "DBMS",
           "timeStart" : "10:00",
           "timeEnd" : "11:00"
         },
@@ -211,7 +171,50 @@
         },
         {
           "key" : "4",
-          "name" : "Lab(A1/A3 - DH&V, A2/A4 - DBMS)",
+          "name" : "TOC",
+          "timeStart" : "12:00",
+          "timeEnd" : "13:00"
+        },
+        {
+          "key" : "5",
+          "name" : "DBMS Lab",
+          "timeStart" : "13:00",
+          "timeEnd" : "15:00"
+        },
+        {
+          "key" : "6",
+          "name" : "Open Elective",
+          "timeStart" : "15:00",
+          "timeEnd" : "16:00"
+
+        }
+      ]
+    },
+    {
+      "day" : "friday",
+      "classes" : [
+        {
+          "key" : "1",
+
+          "name" : "TOC",
+          "timeStart" : "9:00",
+          "timeEnd" : "10:00"
+        },
+        {
+          "key" : "2",
+          "name" : "CN",
+          "timeStart" : "10:00",
+          "timeEnd" : "11:00"
+        },
+        {
+          "key" : "3",
+          "name" : "Recess",
+          "timeStart" : "11:00",
+          "timeEnd" : "12:00"
+        },
+        {
+          "key" : "4",
+          "name" : "EVS",
           "timeStart" : "12:00",
           "timeEnd" : "14:00"
         },
@@ -235,14 +238,14 @@
       "classes" : [
         {
           "key" : "1",
-          "name" : "DBMS",
 
+          "name" : "AI",
           "timeStart" : "9:00",
           "timeEnd" : "10:00"
         },
         {
           "key" : "2",
-          "name" : "TOC",
+          "name" : "OS",
           "timeStart" : "10:00",
           "timeEnd" : "11:00"
         },
@@ -262,13 +265,13 @@
           "key" : "5",
           "name" : "Honor",
           "timeStart" : "13:00",
-          "timeEnd" : "14:00"
-        },
-          {
-          "key" : "5",
-          "name" : "Minor",
-          "timeStart" : "14:00",
           "timeEnd" : "15:00"
+        },
+        {
+          "key" : "6",
+          "name" : "Minor",
+          "timeStart" : "15:00",
+          "timeEnd" : "16:00"
 
         }
       ]

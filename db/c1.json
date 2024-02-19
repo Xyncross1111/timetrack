@@ -1,0 +1,204 @@
+[
+  {
+    "day" : "sunday",
+    "classes" : []
+  },
+  {
+    "day" : "monday",
+    "classes" : [
+      {
+        "key" : "1",
+        "name" : "UHV",
+        "timeStart" : "9:00",
+        "timeEnd" : "10:00"
+      },
+      {
+        "key" : "2",
+        "name" : "OOPS",
+        "timeStart" : "10:00",
+        "timeEnd" : "11:00"
+      },
+      {
+        "key" : "3",
+        "name" : "Bio-Informatics",
+        "timeStart" : "11:00",
+        "timeEnd" : "12:00"
+      }
+    ]
+  },
+  {
+    "day" : "tuesday",
+    "classes" : [
+      {
+        "key" : "1",
+        "name" : "English Lab",
+        "timeStart" : "11:00",
+        "timeEnd" : "13:00"
+      },
+      {
+        "key" : "2",
+        "name" : "Recess",
+        "timeStart" : "13:00",
+        "timeEnd" : "14:00"
+      },
+      {
+        "key" : "3",
+        "name" : "Bio-Informatics",
+        "timeStart" : "14:00",
+        "timeEnd" : "15:00"
+      },
+      {
+        "key" : "4",
+        "name" : "Math",
+        "timeStart" : "15:00",
+        "timeEnd" : "16:00"
+      },
+      {
+        "key" : "5",
+        "name" : "English",
+        "timeStart" : "16:00",
+        "timeEnd" : "17:00"
+      }
+    ]
+  },
+  {
+    "day" : "wednesday",
+    "classes" : [
+      {
+        "key" : "1",
+        "name" : "OOPS",
+        "timeStart" : "9:00",
+        "timeEnd" : "10:00"
+      },
+      {
+        "key" : "2",
+        "name" : "English",
+        "timeStart" : "10:00",
+        "timeEnd" : "11:00"
+      },
+      {
+        "key" : "3",
+        "name" : "Math",
+        "timeStart" : "11:00",
+        "timeEnd" : "12:00"
+      },
+      {
+        "key" : "4",
+        "name" : "Recess",
+        "timeStart" : "12:00",
+        "timeEnd" : "13:00"
+      },
+      {
+        "key" : "5",
+        "name" : "Math Lab",
+        "timeStart" : "13:00",
+        "timeEnd" : "15:00"
+      }
+    ]
+  },
+  {
+    "day" : "thursday",
+    "classes" : [
+      {
+        "key" : "1",
+        "name" : "Physics",
+        "timeStart" : "9:00",
+        "timeEnd" : "10:00"
+      },
+      {
+        "key" : "2",
+        "name" : "Math",
+        "timeStart" : "10:00",
+        "timeEnd" : "11:00"
+      },
+      {
+        "key" : "3",
+        "name" : "Recess",
+        "timeStart" : "11:00",
+        "timeEnd" : "12:00"
+      },
+      {
+        "key" : "4",
+        "name" : "Physics Lab",
+        "timeStart" : "12:00",
+        "timeEnd" : "14:00"
+      }
+    ]
+  },
+  {
+    "day" : "friday",
+    "classes" : [
+      {
+        "key" : "1",
+        "name" : "Computer Architecture",
+        "timeStart" : "9:00",
+        "timeEnd" : "10:00"
+      },
+      {
+        "key" : "2",
+        "name" : "Physics",
+        "timeStart" : "10:00",
+        "timeEnd" : "11:00"
+      },
+      {
+        "key" : "3",
+        "name" : "Recess",
+        "timeStart" : "11:00",
+        "timeEnd" : "12:00"
+      },
+      {
+        "key" : "4",
+        "name" : "OOPS Lab",
+        "timeStart" : "12:00",
+        "timeEnd" : "14:00"
+      },
+      {
+        "key" : "5",
+        "name" : "CWS",
+        "timeStart" : "14:00",
+        "timeEnd" : "15:00"
+      }
+    ]
+  },
+  {
+    "day" : "saturday",
+    "classes" : [
+      {
+        "key" : "1",
+        "name" : "CWS Lab",
+        "timeStart" : "8:00",
+        "timeEnd" : "10:00"
+      },
+      {
+        "key" : "2",
+        "name" : "Recess",
+        "timeStart" : "10:00",
+        "timeEnd" : "11:00"
+      },
+      {
+        "key" : "3",
+        "name" : "OOPS",
+        "timeStart" : "11:00",
+        "timeEnd" : "12:00"
+      },
+      {
+        "key" : "4",
+        "name" : "Physics",
+        "timeStart" : "12:00",
+        "timeEnd" : "13:00"
+      },
+      {
+        "key" : "5",
+        "name" : "Computer Architecture",
+        "timeStart" : "13:00",
+        "timeEnd" : "14:00"
+      },
+      {
+        "key" : "^",
+        "name" : "Liberal Arts",
+        "timeStart" : "14:00",
+        "timeEnd" : "16:00"
+      }
+    ]
+  }
+]
