@@ -1,3 +1,13 @@
+input,
+textarea,
+button,
+select,
+span,
+a{
+    -webkit-tap-highlight-color: transparent;
+    /* makes the blue box on mobile not appear */
+}
+
 nav {
     width: 100%;
     /*max-width: 500px;*/

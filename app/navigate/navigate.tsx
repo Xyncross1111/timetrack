@@ -5,21 +5,13 @@ interface navigateProps {
     handleNext: () => void;
 }
 const Navigate: FC<navigateProps> = (props: navigateProps) => {
-
-    const handleNext = () => {
-        props.handleNext();
-    }
-
-    const handlePrev = () => {
-        props.handlePrev();
-    }
-
+    
     return (
         <nav className={"class-buttons"}>
-            <button className={"prev"} onClick={handlePrev}>
+            <button className={"prev"} onClick={props.handlePrev}>
                 {"◀"} Prev
             </button>
-            <button className={"next"} onClick={handleNext}>
+            <button className={"next"} onClick={props.handleNext}>
                 Next {"▶"}
             </button>
         </nav>

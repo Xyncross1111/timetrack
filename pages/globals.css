@@ -16,6 +16,14 @@
   }
 }
 
+input,
+textarea,
+button,
+select,
+a{
+    -webkit-tap-highlight-color: transparent;
+}
+
 h1{
   margin-top: 10px;
   text-align: center;
