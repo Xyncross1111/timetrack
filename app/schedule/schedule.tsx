@@ -1,13 +1,14 @@
+"use client";
 import Class from "@/app/class/class";
 import "./schedule.css";
 import {FC} from "react";
-
 
 interface scheduleProps {
     classes: any;
     day: string;
     date: Date;
 }
+
 const Schedule: FC<scheduleProps> = ({classes, day, date}) => {
 
     if(classes.length === 0) return (
