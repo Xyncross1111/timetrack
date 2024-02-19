@@ -4,14 +4,15 @@ interface navigateProps {
     handlePrev: () => void;
     handleNext: () => void;
 }
-const Navigate: FC<navigateProps> = (props: navigateProps) => {
+const Navigate: FC<navigateProps> = ({handlePrev, handleNext}) => {
     
     return (
-        <nav className={"class-buttons"}>
-            <button className={"prev"} onClick={props.handlePrev}>
+
+        <nav className={"class-buttons flex max-md:justify-between items-center"}>
+            <button className={"prev"} onClick={handlePrev}>
                 {"◀"} Prev
             </button>
-            <button className={"next"} onClick={props.handleNext}>
+            <button className={"next"} onClick={handleNext}>
                 Next {"▶"}
             </button>
         </nav>
