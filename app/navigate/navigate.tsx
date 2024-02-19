@@ -4,17 +4,10 @@ interface navigateProps {
     handlePrev: () => void;
     handleNext: () => void;
 }
-const Navigate: FC<navigateProps> = (props: navigateProps) => {
-
-    const handleNext = () => {
-        props.handleNext();
-    }
-
-    const handlePrev = () => {
-        props.handlePrev();
-    }
-
+const Navigate: FC<navigateProps> = ({handlePrev, handleNext}) => {
+    
     return (
+
         <nav className={"class-buttons flex max-md:justify-between items-center"}>
             <button className={"prev"} onClick={handlePrev}>
                 {"◀"} Prev

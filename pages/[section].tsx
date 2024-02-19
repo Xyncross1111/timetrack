@@ -1,40 +1,41 @@
 "use client";
-import {useState, useEffect} from "react";
+import {useState, useEffect, use} from "react";
 import { useRouter } from 'next/router';
 import Header from "@/app/Head/Head";
 import Schedule from "@/app/schedule/schedule";
 import Datetime from "@/app/datetime/datetime";
+import Batch from "@/app/batch/batch";
+import a2 from "../db/a2.json";
 import Navigate from "@/app/navigate/navigate";
 import './globals.css';
 
 export default function Home() {
 
     const router = useRouter();
-    const [data, setData] = useState() as any;
 
-    let currDate: Date = new Date();
-    const [date, setDate] = useState(currDate);
-    const [weekDay, setWeekDay] = useState(currDate.getDay())
+    const [data, setData] = useState(a2);
 
-    const [classes, setClasses] = useState({
-        "day" : " ",
-        "classes" : []
-      });
+    const [date, setDate] = useState(new Date());
 
-    useEffect(() => {
+    const [weekDay, setWeekDay] = useState(date.getDay())
 
-        if(!router.isReady) return;
+    const [classes, setClasses] = useState(data[weekDay]);
 
-        const data_ = require(`../db/${router.query.section}.json`);
-        setData(data_)
-        setClasses(data_[weekDay])
-
-    }, [router.query.section, router.isReady, weekDay])
+    const [section, setSection] = useState("a");
 
     const getClasses = (day: number) => {
         const classList = data[day];
         setClasses(classList);
     }
+
+    useEffect( () => {
+        setClasses(data[weekDay]);
+    }, [data])
+    
+    useEffect(() => {
+        if(!router.isReady) return;
+        setSection(router.query.section as string);
+    }, [router.isReady, router.query.section, weekDay])
 
     const handleNext = () => {
 
@@ -68,7 +69,10 @@ export default function Home() {
             <Header />
             <h1 className={"title"}>TimeTrack</h1>
             <h2 className={"info"}><a href="https://github.com/Xyncross1111/timetrack">Repo</a></h2>
-            <Datetime date={date}/>
+            <div className="datetime-batch-container">
+                <Datetime date={date} />
+                <Batch setData={setData} section={section}/>
+            </div>
             <Navigate handlePrev={handlePrev} handleNext={handleNext} />
             <Schedule classes={classes.classes} day={classes.day} date={date} />
         </>

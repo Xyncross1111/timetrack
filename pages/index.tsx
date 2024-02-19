@@ -6,14 +6,14 @@ import Schedule from "@/app/schedule/schedule";
 import Datetime from "@/app/datetime/datetime";
 import Navigate from "@/app/navigate/navigate";
 // import a1a2 from "../db/a1a2.json";
-import a3 from "../db/a3.json";
+import a2 from "../db/a2.json";
 import Header from "@/app/Head/Head";
 import './globals.css';
 // import { ClassList } from "@/app/types/types" ;
 
 export default function Home() {
 
-    const [data, setData] = useState(a3);
+    const [data, setData] = useState(a2);
 
     const [date, setDate] = useState(new Date());
 
@@ -70,7 +70,7 @@ export default function Home() {
             <h2 className={"info"}><a href="https://github.com/Xyncross1111/timetrack">Repo</a></h2>
             <div className="datetime-batch-container">
                 <Datetime date={date} />
-                <Batch setData={setData} />
+                <Batch setData={setData} section={"a"}/>
             </div>
             <Navigate handlePrev={handlePrev} handleNext={handleNext} />
             <Schedule classes={classes.classes} day={classes.day} date={date} />
