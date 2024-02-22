@@ -7,12 +7,16 @@ interface navigateProps {
 const Navigate: FC<navigateProps> = ({handlePrev, handleNext}) => {
     
     return (
-        <nav className={"class-buttons"}>
-            <button className={"prev"} onClick={handlePrev}>
-                {"◀"} Prev
+        <nav className={"nav-container"}>
+            <button className={"prev nav-btn"} onClick={handlePrev}>
+                <span className="face">
+                    <span className="nav-icon">{"◀"}</span> Prev
+                </span>
             </button>
-            <button className={"next"} onClick={handleNext}>
-                Next {"▶"}
+            <button className={"next nav-btn"} onClick={handleNext}>
+                <span className="face">
+                    Next <span className="nav-icon">{"▶"}</span>
+                </span>
             </button>
         </nav>
     )

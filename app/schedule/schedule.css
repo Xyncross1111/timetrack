@@ -1,9 +1,6 @@
 .schedule{
-    /*width: 70vw;*/
     width: 100%;
     max-width: 90%;
-    /*margin-top: 2vh;*/
-    /*margin-left: 5vw;*/
     margin: 2vh auto;
     background: radial-gradient(circle,#2b7df8b8 -30%, #99bdefd7 0%, #2b7df8b8 30%);
     background-size: 400% 400%;

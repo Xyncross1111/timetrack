@@ -1,3 +1,8 @@
+*::selection{
+    background-color: none;
+    color: white;
+}
+
 input,
 textarea,
 button,
@@ -8,40 +13,72 @@ a{
     /* makes the blue box on mobile not appear */
 }
 
-nav {
+.nav-container{
     width: 100%;
-    /*max-width: 500px;*/
-    /*margin-top: 2vh;*/
-    /*margin-left: 5vw;*/
-    border-radius: 10px;
-    padding: 1px 10px 10px 10px;
     text-align: center;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
     font-family: QuickSandRegular, "Roboto Light", sans-serif;
 }
 
-nav button {
-    padding: 10px 20px;
-    margin: 0.5rem;
-    width: 10rem;
-    font-size: 1rem;
-    background: rgba(43, 125, 248, 0.7215686274509804);
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1),0px 0px 20px #2b7df8b8;
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
-    border: 1px solid rgba(43, 125, 248, 0.78);
-    color: #ffffff;
-    text-shadow: 0px 0px 4px #ffffff;
-    border-radius: 50px;
+.nav-btn {
+    background: #1e69da82;
+    border-radius: 20px;
+    border: none;
+    padding: 0;
     cursor: pointer;
+    outline-offset: 4px;
 }
 
-/* Active/focus styles */
-nav button:active,
-nav button:focus {
-    outline: none;
-    /* Remove default focus outline */
-    box-shadow: 0px 0px 20px #2b7df8b8
-        /* Add a box shadow on focus/active */
+.face{
+    display: block;
+    border-radius: 20px;
+    padding: 7px 0px;
+    font-size: 1rem;
+    background-color: #2b7df8;
+    border: 1px solid #75acff;
+    box-shadow: 0px 0px 20px #2b7df8b8;
+    text-shadow: 0px 0px 10px white;
+    color: white;
+    transform: translateY(-6px);
+    transition: transform 0.1s, box-shadow 0.1s;
+}
+
+.nav-btn:active .face{
+    transform: translateY(-2px);
+    box-shadow: 0 0 0 #2b7df8b8;
+}
+.nav-btn:active .nav-icon{
+    box-shadow: grey 0 2px 0;
+}
+
+.nav-icon{
+    background-color: white;
+    box-shadow: grey 0 6px 0;
+    transition: box-shadow 0.1s;
+    color: #2b7df8;
+    font-size: 1.5rem;
+    padding: 10px;
+}
+
+.prev .nav-icon{
+    border-radius: 20px 0 0 20px;
+    margin-right: 10px;
+}
+.next .nav-icon{
+    border-radius: 0 20px 20px 0;
+    margin-left: 10px;
+}
+
+.prev .face{
+    padding-right: 28px;
+}
+.next .face{
+    padding-left: 28px;
+}
+
+.nav-icon-shadow{
+    background-color: grey;
+    width: 40px;
 }
