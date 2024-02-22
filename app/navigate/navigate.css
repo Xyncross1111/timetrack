@@ -34,50 +34,48 @@ a{
 .face{
     display: block;
     border-radius: 20px;
-    padding: 9px 0px;
-    font-size: 1.25rem;
+    padding: 7px 0px;
+    font-size: 1rem;
     background-color: #2b7df8;
     border: 1px solid #75acff;
     box-shadow: 0px 0px 20px #2b7df8b8;
+    text-shadow: 0px 0px 10px white;
     color: white;
     transform: translateY(-6px);
-    transition: transform 0.1s, background-color 0.1s, color 0.1s;
-}
-
-.face:active{
-    background-color: #1457bb;
-    color: rgba(255, 255, 255, 0.126);
-}
-.nav-btn:active .nav-icon{
-    background-color: rgba(255, 255, 255, 0.489);
-    color: #1457bb;
+    transition: transform 0.1s, box-shadow 0.1s;
 }
 
 .nav-btn:active .face{
     transform: translateY(-2px);
+    box-shadow: 0 0 0 #2b7df8b8;
+}
+.nav-btn:active .nav-icon{
+    box-shadow: grey 0 2px 0;
 }
 
 .nav-icon{
     background-color: white;
+    box-shadow: grey 0 6px 0;
+    transition: box-shadow 0.1s;
     color: #2b7df8;
     font-size: 1.5rem;
-    padding: 12px;
+    padding: 10px;
 }
 
 .prev .nav-icon{
     border-radius: 20px 0 0 20px;
-    margin-right: 12px;
+    margin-right: 10px;
 }
 .next .nav-icon{
     border-radius: 0 20px 20px 0;
-    margin-left: 12px;
+    margin-left: 10px;
 }
 
 .prev .face{
-    padding-right: 30px;
+    padding-right: 28px;
 }
 .next .face{
-    padding-left: 30px;
+    padding-left: 28px;
 }
 
 .nav-icon-shadow{
