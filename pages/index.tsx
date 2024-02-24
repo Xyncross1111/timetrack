@@ -21,7 +21,7 @@ export default function Home() {
 
     const [classes, setClasses] = useState(data[weekDay]);
 
-    useEffect( () => {
+    useEffect(() => {
         setClasses(data[weekDay]);
     }, [data])
 
@@ -63,6 +63,23 @@ export default function Home() {
         setWeekDay(currDay);
     }
 
+    let touchstartX = 0
+    let touchendX = 0
+
+    function checkDirection() {
+        if (touchendX < touchstartX) handleNext()
+        if (touchendX > touchstartX) handlePrev()
+    }
+
+    document.addEventListener('touchstart', e => {
+        touchstartX = e.changedTouches[0].screenX
+    })
+
+    document.addEventListener('touchend', e => {
+        touchendX = e.changedTouches[0].screenX
+        checkDirection()
+    })
+
     return (
         <>
             <Header />
@@ -70,7 +87,7 @@ export default function Home() {
             <h2 className={"info"}><a href="https://github.com/Xyncross1111/timetrack">Repo</a></h2>
             <div className="datetime-batch-container">
                 <Datetime date={date} />
-                <Batch setData={setData} section={"a"}/>
+                <Batch setData={setData} section={"a"} />
             </div>
             <Navigate handlePrev={handlePrev} handleNext={handleNext} />
             <Schedule classes={classes.classes} day={classes.day} date={date} />
