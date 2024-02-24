@@ -8,12 +8,12 @@ const Navigate: FC<navigateProps> = ({handlePrev, handleNext}) => {
     
     return (
         <nav className={"nav-container"}>
-            <button className={"prev nav-btn"} onMouseUp={handlePrev}>
+            <button className={"prev nav-btn"} onMouseUp={handlePrev} onPointerUp={handlePrev}>
                 <span className="face">
                     <span className="nav-icon">{"◀"}</span> Prev
                 </span>
             </button>
-            <button className={"next nav-btn"} onMouseUp={handleNext}>
+            <button className={"next nav-btn"} onMouseUp={handleNext} onPointerUp={handleNext}>
                 <span className="face">
                     Next <span className="nav-icon">{"▶"}</span>
                 </span>
