@@ -1,15 +1,13 @@
 "use client";
 import { useState, useEffect, SetStateAction, Dispatch } from "react";
-
+import { useSwipeable } from "react-swipeable";
 import Batch from "@/app/batch/batch";
 import Schedule from "@/app/schedule/schedule";
 import Datetime from "@/app/datetime/datetime";
 import Navigate from "@/app/navigate/navigate";
-// import a1a2 from "../db/a1a2.json";
 import a2 from "../db/a2.json";
 import Header from "@/app/Head/Head";
 import './globals.css';
-// import { ClassList } from "@/app/types/types" ;
 
 export default function Home() {
 
@@ -21,20 +19,9 @@ export default function Home() {
 
     const [classes, setClasses] = useState(data[weekDay]);
 
-    useEffect( () => {
+    useEffect(() => {
         setClasses(data[weekDay]);
     }, [data])
-
-    // Need two sets of dates. one to hold the current date and one to hold the date that is being navigated to.
-    // This is because the useEffect hook resets date to present date every second.
-
-    // useEffect(() => {
-    //     const intervalId = setInterval(setDate, 1000, (prevDate: Date) => {
-    //         return prevDate.setMinutes(prevDate.getMinutes());
-    //     });
-    //
-    //     return () => clearInterval(intervalId);
-    // }, []);
 
     const handleNext = () => {
 
@@ -63,22 +50,22 @@ export default function Home() {
         setWeekDay(currDay);
     }
 
+    const handlers = useSwipeable({
+        onSwipedLeft: () => handleNext(),
+        onSwipedRight: () => handlePrev()
+    });
+
     return (
-        <>
+        <div {...handlers} style={{height: "100vh"}}>
             <Header />
             <h1 className={"title"}>TimeTrack</h1>
             <h2 className={"info"}><a href="https://github.com/Xyncross1111/timetrack">Repo</a></h2>
             <div className="datetime-batch-container">
                 <Datetime date={date} />
-                <Batch setData={setData} section={"a"}/>
+                <Batch setData={setData} section={"a"} />
             </div>
             <Navigate handlePrev={handlePrev} handleNext={handleNext} />
-            <Schedule classes={classes.classes} day={classes.day} date={date} />
-        </>
+            <Schedule classes={classes.classes} day={classes.day} date={date}/>
+        </div>
     )
 }
-
-// const updateTime = (setDate: Dispatch<SetStateAction<Date>>) => {
-//     const newDateTime = new Date();
-//     setDate(newDateTime);
-// };

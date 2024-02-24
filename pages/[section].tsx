@@ -1,5 +1,6 @@
 "use client";
 import {useState, useEffect, use} from "react";
+import { useSwipeable } from "react-swipeable";
 import { useRouter } from 'next/router';
 import Header from "@/app/Head/Head";
 import Schedule from "@/app/schedule/schedule";
@@ -64,8 +65,13 @@ export default function Home() {
         setWeekDay(currDay);
     }
 
+    const handlers = useSwipeable({
+        onSwipedLeft: () => handleNext(),
+        onSwipedRight: () => handlePrev()
+    });
+
     return (
-        <>
+        <div {...handlers} style={{height: "100vh"}}>
             <Header />
             <h1 className={"title"}>TimeTrack</h1>
             <h2 className={"info"}><a href="https://github.com/Xyncross1111/timetrack">Repo</a></h2>
@@ -75,6 +81,6 @@ export default function Home() {
             </div>
             <Navigate handlePrev={handlePrev} handleNext={handleNext} />
             <Schedule classes={classes.classes} day={classes.day} date={date} />
-        </>
+        </div>
     )
 }
