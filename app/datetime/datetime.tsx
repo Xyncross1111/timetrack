@@ -15,12 +15,16 @@ const Datetime: FC<datetimeProps> = (props: datetimeProps) => {
     const [animatedDay, setAnimatedDay] = useState(day);
 
     useEffect(() => {
-        for (let i = 0; i < Math.max(day.length, animatedDay.length); i++) 
-        setTimeout(() => {
-            setAnimatedDay(prevAnimatedDay => {
-                return prevAnimatedDay.substring(0, i) + (i<day.length ? day[i] + prevAnimatedDay.substring(i + 1): "");
-            });
-        }, 50 * i);
+        for (let i = 0; i < day.length; i++) {
+            setTimeout(() => {
+                setAnimatedDay(prevAnimatedDay => {
+                    if(i<day.length-1){
+                        return prevAnimatedDay.substring(0, i) + day[i] + prevAnimatedDay.substring(i + 1);
+                    }
+                    return prevAnimatedDay.substring(0, i) + day[i];
+                });
+            }, 50 * i);
+        }
         
     }, [day]);
 

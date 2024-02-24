@@ -55,7 +55,7 @@ const Batch: FC<BatchProps> = ({ setData,section }: BatchProps) => {
 
     return (
         <div className="container">
-            <div className="text">
+            <div className="text" onClick={handleBatch}>
                 <p className={`${batch === "1" ? "selected" : "not-selected"}`}>{batchNames[section+1]}</p>
                 <p className={`${batch === "2" ? "selected" : "not-selected"}`}>{batchNames[section+2]}</p>
             </div>
