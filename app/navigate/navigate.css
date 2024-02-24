@@ -50,6 +50,7 @@ a{
 
 .nav-icon{
     background-color: white;
+    border: 1px solid white;
     box-shadow: grey 0 6px 0;
     transition: box-shadow 0.1s;
     color: #2b7df8;
