@@ -1,7 +1,7 @@
 "use client";
 import React, { Dispatch, FC, SetStateAction, useState, useEffect } from "react";
+import {useSwipeable} from "react-swipeable";
 import "./batch.css";
-import { data } from "autoprefixer";
 
 interface BatchProps {
     setData: any;
@@ -36,6 +36,11 @@ const Batch: FC<BatchProps> = ({ setData,section }: BatchProps) => {
         }
     };
 
+    const handlers = useSwipeable({
+        onSwipedDown: () => handleBatch(),
+        onSwipedUp: () => handleBatch()
+    });
+
     interface BatchNames {
         [key: string]: string;
     }
@@ -59,7 +64,7 @@ const Batch: FC<BatchProps> = ({ setData,section }: BatchProps) => {
                 <p className={`${batch === "1" ? "selected" : "not-selected"}`}>{batchNames[section+1]}</p>
                 <p className={`${batch === "2" ? "selected" : "not-selected"}`}>{batchNames[section+2]}</p>
             </div>
-            <label className="switch">
+            <label className="switch" {...handlers}>
                 <input type="checkbox" onChange={handleBatch} checked={batch === "2"}/>
                 <span className="slider round"></span>
             </label>
