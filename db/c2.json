@@ -171,13 +171,13 @@
       },
       {
         "key" : "2",
-        "name" : "Recess",
+        "name" : "OOPS",
         "timeStart" : "10:00",
         "timeEnd" : "11:00"
       },
       {
         "key" : "3",
-        "name" : "OOPS",
+        "name" : "Recess",
         "timeStart" : "11:00",
         "timeEnd" : "12:00"
       },
