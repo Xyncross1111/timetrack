@@ -178,23 +178,29 @@
       {
         "key" : "1",
         "name" : "OOPS",
+        "timeStart" : "10:00",
+        "timeEnd" : "11:00"
+      },
+      {
+        "key" : "2",
+        "name" : "Recess",
         "timeStart" : "11:00",
         "timeEnd" : "12:00"
       },
       {
-        "key" : "2",
+        "key" : "3",
         "name" : "Physics",
         "timeStart" : "12:00",
         "timeEnd" : "13:00"
       },
       {
-        "key" : "3",
+        "key" : "4",
         "name" : "Computer Architecture",
         "timeStart" : "13:00",
         "timeEnd" : "14:00"
       },
       {
-        "key" : "4",
+        "key" : "5",
         "name" : "Liberal Arts",
         "timeStart" : "14:00",
         "timeEnd" : "16:00"
