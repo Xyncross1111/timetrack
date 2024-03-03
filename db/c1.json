@@ -23,6 +23,18 @@
         "name" : "Bio-Informatics",
         "timeStart" : "11:00",
         "timeEnd" : "12:00"
+      },
+      {
+        "key" : "4",
+        "name" : "Recess",
+        "timeStart" : "12:00",
+        "timeEnd" : "13:00"
+      },
+      {
+        "key" : "5",
+        "name" : "CWS Lab",
+        "timeStart" : "13:00",
+        "timeEnd" : "15:00"
       }
     ]
   },
@@ -165,36 +177,24 @@
     "classes" : [
       {
         "key" : "1",
-        "name" : "CWS Lab",
-        "timeStart" : "8:00",
-        "timeEnd" : "10:00"
-      },
-      {
-        "key" : "2",
-        "name" : "Recess",
-        "timeStart" : "10:00",
-        "timeEnd" : "11:00"
-      },
-      {
-        "key" : "3",
         "name" : "OOPS",
         "timeStart" : "11:00",
         "timeEnd" : "12:00"
       },
       {
-        "key" : "4",
+        "key" : "2",
         "name" : "Physics",
         "timeStart" : "12:00",
         "timeEnd" : "13:00"
       },
       {
-        "key" : "5",
+        "key" : "3",
         "name" : "Computer Architecture",
         "timeStart" : "13:00",
         "timeEnd" : "14:00"
       },
       {
-        "key" : "^",
+        "key" : "4",
         "name" : "Liberal Arts",
         "timeStart" : "14:00",
         "timeEnd" : "16:00"
