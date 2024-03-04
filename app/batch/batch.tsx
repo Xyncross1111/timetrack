@@ -9,7 +9,11 @@ interface BatchProps {
 }
 
 const Batch: FC<BatchProps> = ({ setData,section }: BatchProps) => {
+    if(section === "o3"){
 
+        setData(require('../../db/o3.json'));
+        return (<></>); 
+    }
     const data1 = require(`../../db/${section}1.json`);
     const data2 = require(`../../db/${section}2.json`);
 
