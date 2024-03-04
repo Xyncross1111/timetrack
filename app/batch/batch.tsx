@@ -9,9 +9,17 @@ interface BatchProps {
 }
 
 const Batch: FC<BatchProps> = ({ setData,section }: BatchProps) => {
-
-    const data1 = require(`../../db/${section}1.json`);
-    const data2 = require(`../../db/${section}2.json`);
+    let sectionsWithNoBatch=['o3'];
+    let data1=require(`../../db/a1.json`);
+    let data2=require(`../../db/a2.json`);
+    if(sectionsWithNoBatch.includes(section)){
+         data1 = require(`../../db/${section}.json`);
+         data2 = require(`../../db/${section}.json`);
+    }
+    else{
+         data1 = require(`../../db/${section}1.json`);
+         data2 = require(`../../db/${section}2.json`);
+    }
 
     const [batch, setBatch] = useState("1");
 
@@ -55,9 +63,13 @@ const Batch: FC<BatchProps> = ({ setData,section }: BatchProps) => {
         "ds4a1": "A1/A3",
         "ds4a2": "A2/A4",
         "ds4b1": "B1/B3",
-        "ds4b2": "B2/B4"
+        "ds4b2": "B2/B4",
+        "o1":"O1",
+        "o2":"O2"
     }
-
+    if (sectionsWithNoBatch.includes(section)){
+        return(<></>)
+    }
     return (
         <div className="container">
             <div className="text" onClick={handleBatch}>

@@ -1,0 +1,199 @@
+[
+{
+      "day" : "sunday",
+      "classes" : []
+    },
+    {
+      "day" : "monday",
+      "classes" : [
+        {
+          "key" : "1",
+          "name" : "OOPS LAB",
+          "timeStart" : "9:00",
+          "timeEnd" : "11:00"
+        },
+        {
+          "key" : "2",
+          "name" : "Recess",
+          "timeStart" : "11:00",
+          "timeEnd" : "12:00"
+        },
+        {
+          "key" : "3",
+          "name" : "EOI",
+          "timeStart" : "12:00",
+          "timeEnd" : "13:00"
+        },
+        {
+          "key" : "4",
+          "name" : "MATHS",
+          "timeStart" : "13:00",
+          "timeEnd" : "14:00"
+        },
+        {
+          "key" : "5",
+          "name" : "OOPS",
+          "timeStart" : "14:00",
+          "timeEnd" : "15:00"
+        }
+      ]
+    },
+    {
+      "day" : "tuesday",
+      "classes" : [
+        {
+          "key" : "1",
+          "name" : "EOI",
+          "timeStart" : "9:00",
+          "timeEnd" : "10:00"
+        },
+        {
+          "key" : "2",
+          "name" : "OOPS",
+          "timeStart" : "10:00",
+          "timeEnd" : "11:00"
+        },
+        {
+          "key" : "3",
+          "name" : "Recess",
+          "timeStart" : "11:00",
+          "timeEnd" : "12:00"
+        },
+        {
+          "key" : "4",
+          "name" : "EOI Lab",
+          "timeStart" : "12:00",
+          "timeEnd" : "14:00"
+        },
+        {
+          "key" : "5",
+          "name" : "MATHS",
+          "timeStart" : "14:00",
+          "timeEnd" : "16:00"
+        }
+      ]
+    },
+    {
+      "day" : "wednesday",
+      "classes" : [
+        {
+          "key" : "1",
+          "name" : "SPORTS",
+          "timeStart" : "7:30",
+          "timeEnd" : "9:30"
+        },
+        {
+          "key" : "2",
+          "name" : "Recess",
+          "timeStart" : "9:30",
+          "timeEnd" : "10:00"
+        },
+        {
+          "key" : "3",
+          "name" : "MATHS",
+          "timeStart" : "10:00",
+          "timeEnd" : "11:00"
+        },
+        {
+          "key" : "4",
+          "name" : "CHEMISTRY",
+          "timeStart" : "12:00",
+          "timeEnd" : "13:00"
+        }
+      ]
+    },
+    {
+      "day" : "thursday",
+      "classes" : [
+        {
+          "key" : "1",
+          "name" : "CHEMISTRY LAB",
+          "timeStart" : "9:00",
+          "timeEnd" : "11:00"
+        },
+        {
+          "key" : "2",
+          "name" : "Recess",
+          "timeStart" : "11:00",
+          "timeEnd" : "12:00"
+        },
+        {
+          "key" : "3",
+          "name" : "Digital Electronics",
+          "timeStart" : "12:00",
+          "timeEnd" : "14:00"
+        },
+        {
+          "key" : "4",
+          "name" : "CHEMISTRY",
+          "timeStart" : "14:00",
+          "timeEnd" : "15:00"
+        }
+      ]
+    },
+    {
+      "day" : "friday",
+      "classes" : [
+        {
+          "key" : "1",
+          "name" : "Digital Electronics Lab",
+          "timeStart" : "9:00",
+          "timeEnd" : "11:00"
+        },
+        {
+          "key" : "2",
+          "name" : "Recess",
+          "timeStart" : "11:00",
+          "timeEnd" : "12:00"
+        },
+        {
+          "key" : "3",
+          "name" : "EOI",
+          "timeStart" : "12:00",
+          "timeEnd" : "13:00"
+        },
+        {
+          "key" : "4",
+          "name" : "Digital Electronics",
+          "timeStart" : "13:00",
+          "timeEnd" : "14:00"
+        },
+        {
+          "key" : "5",
+          "name" : "FLIC",
+          "timeStart" : "14:00",
+          "timeEnd" : "15:00"
+        }
+        ,
+        {
+          "key" : "5",
+          "name" : "YOGA",
+          "timeStart" : "15:00",
+          "timeEnd" : "16:00"
+        }
+      ]
+    },
+    {
+      "day" : "saturday",
+      "classes" : [
+        {
+          "key" : "1",
+          "name" : "OOPS",
+          "timeStart" : "11:00",
+          "timeEnd" : "12:00"
+        },
+        {
+          "key" : "2",
+          "name" : "MATHS",
+          "timeStart" : "12:00",
+          "timeEnd" : "13:00"
+        },
+        {
+          "key" : "3",
+          "name" : "FLIC",
+          "timeStart" : "13:00",
+          "timeEnd" : "14:00"
+        }
+      ]
+    }
+]
