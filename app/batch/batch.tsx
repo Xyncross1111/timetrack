@@ -55,7 +55,9 @@ const Batch: FC<BatchProps> = ({ setData,section }: BatchProps) => {
         "ds4a1": "A1/A3",
         "ds4a2": "A2/A4",
         "ds4b1": "B1/B3",
-        "ds4b2": "B2/B4"
+        "ds4b2": "B2/B4",
+        "o1":"O1",
+        "o2":"O2"
     }
 
     return (
