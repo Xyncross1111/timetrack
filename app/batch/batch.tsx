@@ -9,7 +9,7 @@ interface BatchProps {
 }
 
 const Batch: FC<BatchProps> = ({ setData,section }: BatchProps) => {
-    let sectionsWithNoBatch=['o3'];
+    let sectionsWithNoBatch=['o3','n3'];
     let data1=require(`../../db/a1.json`);
     let data2=require(`../../db/a2.json`);
     if(sectionsWithNoBatch.includes(section)){
@@ -65,7 +65,9 @@ const Batch: FC<BatchProps> = ({ setData,section }: BatchProps) => {
         "ds4b1": "B1/B3",
         "ds4b2": "B2/B4",
         "o1":"O1",
-        "o2":"O2"
+        "o2":"O2",
+        "n1":"N1",
+        "n2":"N2"
     }
     if (sectionsWithNoBatch.includes(section)){
         return(<></>)
