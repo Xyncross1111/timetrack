@@ -1,7 +1,7 @@
 "use client";
 import React, { Dispatch, FC, SetStateAction, useState, useEffect } from "react";
 import { useSwipeable } from "react-swipeable";
-import batches from '../../db/batch_list.json';
+import batchName from '../../db/batchName.json';
 import "./batch.css";
 
 interface BatchProps {
@@ -55,7 +55,7 @@ const Batch: FC<BatchProps> = ({ setData, section }: BatchProps) => {
         onSwipedUp: () => handleBatch()
     });
 
-    const batchNames: BatchNames = batches;
+    const batchNames: BatchNames = batchName;
 
     if (sectionsWithNoBatch.includes(section)) {
         return (<></>)
