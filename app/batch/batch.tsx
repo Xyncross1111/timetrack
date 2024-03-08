@@ -15,7 +15,7 @@ interface BatchNames {
 
 const Batch: FC<BatchProps> = ({ setData, section }: BatchProps) => {
 
-    let sectionsWithNoBatch = ['o3'];
+    let sectionsWithNoBatch = ['o3', 'n3'];
     let data1 = require(`../../db/batches/a1.json`);
     let data2 = require(`../../db/batches/a2.json`);
 
