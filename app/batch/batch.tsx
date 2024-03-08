@@ -1,6 +1,7 @@
 "use client";
 import React, { Dispatch, FC, SetStateAction, useState, useEffect } from "react";
-import {useSwipeable} from "react-swipeable";
+import { useSwipeable } from "react-swipeable";
+import batchName from '../../db/batchName.json';
 import "./batch.css";
 
 interface BatchProps {
@@ -8,17 +9,22 @@ interface BatchProps {
     section: string;
 }
 
-const Batch: FC<BatchProps> = ({ setData,section }: BatchProps) => {
-    let sectionsWithNoBatch=['o3','n3'];
-    let data1=require(`../../db/a1.json`);
-    let data2=require(`../../db/a2.json`);
-    if(sectionsWithNoBatch.includes(section)){
-         data1 = require(`../../db/${section}.json`);
-         data2 = require(`../../db/${section}.json`);
+interface BatchNames {
+    [key: string]: string;
+}
+
+const Batch: FC<BatchProps> = ({ setData, section }: BatchProps) => {
+
+    let sectionsWithNoBatch = ['o3'];
+    let data1 = require(`../../db/batches/a1.json`);
+    let data2 = require(`../../db/batches/a2.json`);
+
+    if (sectionsWithNoBatch.includes(section)) {
+        data1 = data2 = require(`../../db/batches/${section}.json`);
     }
-    else{
-         data1 = require(`../../db/${section}1.json`);
-         data2 = require(`../../db/${section}2.json`);
+    else {
+        data1 = require(`../../db/batches/${section}1.json`);
+        data2 = require(`../../db/batches/${section}2.json`);
     }
 
     const [batch, setBatch] = useState("1");
@@ -49,37 +55,19 @@ const Batch: FC<BatchProps> = ({ setData,section }: BatchProps) => {
         onSwipedUp: () => handleBatch()
     });
 
-    interface BatchNames {
-        [key: string]: string;
-    }
+    const batchNames: BatchNames = batchName;
 
-    const batchNames: BatchNames = {
-        "a1": "A1/A2",
-        "a2": "A3",
-        "b1": "B1/B2",
-        "b2": "B3",
-        "c1": "C1/C2",
-        "c2": "C3",
-        "ds4a1": "A1/A3",
-        "ds4a2": "A2/A4",
-        "ds4b1": "B1/B3",
-        "ds4b2": "B2/B4",
-        "o1":"O1",
-        "o2":"O2",
-        "n1":"N1",
-        "n2":"N2"
-    }
-    if (sectionsWithNoBatch.includes(section)){
-        return(<></>)
+    if (sectionsWithNoBatch.includes(section)) {
+        return (<></>)
     }
     return (
         <div className="container">
             <div className="text" onClick={handleBatch}>
-                <p className={`${batch === "1" ? "selected" : "not-selected"}`}>{batchNames[section+1]}</p>
-                <p className={`${batch === "2" ? "selected" : "not-selected"}`}>{batchNames[section+2]}</p>
+                <p className={`${batch === "1" ? "selected" : "not-selected"}`}>{batchNames[section + 1]}</p>
+                <p className={`${batch === "2" ? "selected" : "not-selected"}`}>{batchNames[section + 2]}</p>
             </div>
             <label className="switch" {...handlers}>
-                <input type="checkbox" onChange={handleBatch} checked={batch === "2"}/>
+                <input type="checkbox" onChange={handleBatch} checked={batch === "2"} />
                 <span className="slider round"></span>
             </label>
         </div>
@@ -92,7 +80,7 @@ const setLocalStorage = (setBatch: Dispatch<SetStateAction<string>>, setData: an
 
     const storedBatch = localStorage.getItem("batch");
 
-    if (storedBatch){
+    if (storedBatch) {
 
         setBatch(storedBatch);
 

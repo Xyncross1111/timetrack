@@ -12,7 +12,7 @@ interface classProps {
 }
 const Class: FC<classProps> = ({key, name, timeStart, timeEnd, date}) => {
 
-    let className = `class - ${key} classes`;
+    let className = `class - classes`;
 
     const [currDateTime, setCurrDateTime] = useState(new Date());
 

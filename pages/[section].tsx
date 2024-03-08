@@ -6,7 +6,7 @@ import Header from "@/app/Head/Head";
 import Schedule from "@/app/schedule/schedule";
 import Datetime from "@/app/datetime/datetime";
 import Batch from "@/app/batch/batch";
-import a2 from "../db/a2.json";
+import a2 from "../db/batches/a2.json";
 import Navigate from "@/app/navigate/navigate";
 import './globals.css';
 
