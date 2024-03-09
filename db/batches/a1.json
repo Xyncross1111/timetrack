@@ -37,33 +37,27 @@
       "classes" : [
         {
           "key" : "1",
-          "name" : "OOPS Lab",
-          "timeStart" : "9:00",
-          "timeEnd" : "11:00"
-        },
-        {
-          "key" : "2",
-          "name" : "Recess",
-          "timeStart" : "11:00",
-          "timeEnd" : "12:00"
-        },
-        {
-          "key" : "3",
           "name" : "Math",
           "timeStart" : "12:00",
           "timeEnd" : "13:00"
         },
         {
-          "key" : "4",
+          "key" : "2",
           "name" : "Physics",
           "timeStart" : "13:00",
           "timeEnd" : "14:00"
         },
         {
-          "key" : "5",
+          "key" : "3",
           "name" : "OOPS",
           "timeStart" : "14:00",
           "timeEnd" : "15:00"
+        },
+        {
+          "key" : "4",
+          "name" : "OOPS Lab",
+          "timeStart" : "15:30",
+          "timeEnd" : "17:30"
         }
       ]
     },
