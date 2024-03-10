@@ -10,7 +10,7 @@ interface BtnProps {
 
 const Btn: FC<BtnProps> = ({batchName,position, selectedBatch, setSelectedBatch}: BtnProps) => {
     let cssClassName = "front "+position;
-    if(selectedBatch === batchName) cssClassName += " selected";
+    if(selectedBatch === batchName) cssClassName += " pushed";
     return (
             <button className={`batch-btn ${position}`} onClick={()=>setSelectedBatch(batchName)}>
                 <span className={cssClassName}>{batchName}</span>

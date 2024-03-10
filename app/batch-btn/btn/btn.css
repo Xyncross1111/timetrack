@@ -23,7 +23,7 @@
     transform: translateY(-2px);
 }
 
-.selected{
+.pushed{
     transform: translateY(-2px);
     background: #006de1;
 }
@@ -41,12 +41,12 @@
     border-left: 0;
 }
 
-.left.selected{
+.left.pushed{
     box-shadow: inset -10px 0px 10px #000f1f67;
 }
-.middle.selected{
+.middle.pushed{
     box-shadow: inset 0px 0px 10px #000f1f9a;
 }
-.right.selected{
+.right.pushed{
     box-shadow: inset 10px 0px 10px #000f1f67;
 }
