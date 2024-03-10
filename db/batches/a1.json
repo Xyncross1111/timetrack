@@ -55,6 +55,12 @@
         },
         {
           "key" : "4",
+          "name" : "Recess",
+          "timeStart" : "15:00",
+          "timeEnd" : "15:30"
+        },
+        {
+          "key" : "5",
           "name" : "OOPS Lab",
           "timeStart" : "15:30",
           "timeEnd" : "17:30"
