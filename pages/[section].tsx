@@ -24,6 +24,8 @@ export default function Home() {
 
     const [section, setSection] = useState("a");
 
+    const sectionsWithNoBatch = ['o3', 'n3'];
+
     const getClasses = (day: number) => {
         const classList = data[day];
         setClasses(classList);
@@ -77,7 +79,7 @@ export default function Home() {
             <h2 className={"info"}><a href="https://github.com/Xyncross1111/timetrack">Repo</a></h2>
             <div className="datetime-batch-container">
                 <Datetime date={date} />
-                <Batch setData={setData} section={section}/>
+                {sectionsWithNoBatch.includes(section) ? "": <Batch setData={setData} section={section}/> }
             </div>
             <Navigate handlePrev={handlePrev} handleNext={handleNext} />
             <Schedule classes={classes.classes} day={classes.day} date={date} />
