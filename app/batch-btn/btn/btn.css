@@ -1,0 +1,52 @@
+.batch-btn {
+    background: #104eaa;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    outline-offset: 4px;
+    box-shadow: #104eaa 0px 0px 10px;
+}
+
+.front {
+    display: block;
+    padding: 8px 8px;
+    font-size: 1.3rem;
+    background: hsl(207, 100%, 47%);
+    color: white;
+    transform: translateY(-6px);
+    border: rgba(255, 255, 255, 0.42) 1px solid;
+    text-shadow: 0px 0px 10px white;
+    transition: transform 0.1s;
+}
+
+.batch-btn:active .front {
+    transform: translateY(-2px);
+}
+
+.pushed{
+    transform: translateY(-2px);
+    background: #006de1;
+}
+
+.left{
+    border-radius: 4px 0 0 4px;
+    border-right: 0;
+}
+.middle{
+    border-left: 0;
+    border-right: 0;
+}
+.right{
+    border-radius: 0 4px 4px 0;
+    border-left: 0;
+}
+
+.left.pushed{
+    box-shadow: inset -10px 0px 10px #000f1f67;
+}
+.middle.pushed{
+    box-shadow: inset 0px 0px 10px #000f1f9a;
+}
+.right.pushed{
+    box-shadow: inset 10px 0px 10px #000f1f67;
+}

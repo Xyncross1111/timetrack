@@ -6,6 +6,7 @@ import Header from "@/app/Head/Head";
 import Schedule from "@/app/schedule/schedule";
 import Datetime from "@/app/datetime/datetime";
 import Batch from "@/app/batch/batch";
+import BatchBtn from "@/app/batch-btn/batch-btn";
 import a2 from "../db/batches/a2.json";
 import Navigate from "@/app/navigate/navigate";
 import './globals.css';
@@ -27,7 +28,7 @@ export default function Home() {
     const [classes, setClasses] = useState(data[weekDay]);
     const [section, setSection] = useState("a");
 
-    const sectionsWithNoBatch = ['o3', 'n3'];
+    const sectionsWith3Batches = ['o', 'n'];
 
     useEffect( () => {
         setClasses(data[fakeWeekDay]);
@@ -60,7 +61,10 @@ export default function Home() {
             <h2 className={"info"}><a href="https://github.com/Xyncross1111/timetrack">Repo</a></h2>
             <div className="datetime-batch-container">
                 <Datetime date={date} />
-                {!sectionsWithNoBatch.includes(section)&&<Batch setData={setData} section={section}/> }
+                {sectionsWith3Batches.includes(section) 
+                    ? <BatchBtn setData={setData} section={section}/> 
+                    : <Batch setData={setData} section={section}/> 
+                }
             </div>
             <Navigate handlePrev={handlePrev} handleNext={handleNext} />
             <Schedule classes={classes.classes} day={classes.day} date={fakeDate} />
