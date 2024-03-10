@@ -1,0 +1,216 @@
+[
+    {
+        "day": "sunday",
+        "classes": []
+    },
+    {
+        "day": "monday",
+        "classes": [
+            {
+                "key": "1",
+                "name": "Math Lab",
+                "timeStart": "9:00",
+                "timeEnd": "11:00"
+            },
+            {
+                "key": "2",
+                "name": "Recess",
+                "timeStart": "11:00",
+                "timeEnd": "12:00"
+            },
+            {
+                "key": "3",
+                "name": "Computer Architecture",
+                "timeStart": "12:00",
+                "timeEnd": "13:00"
+            },
+            {
+                "key": "4",
+                "name": "Physics",
+                "timeStart": "13:00",
+                "timeEnd": "14:00"
+            }
+        ]
+    },
+    {
+        "day": "tuesday",
+        "classes": [
+            {
+                "key": "1",
+                "name": "CWS",
+                "timeStart": "9:00",
+                "timeEnd": "10:00"
+            },
+            {
+                "key": "2",
+                "name": "UHV",
+                "timeStart": "10:00",
+                "timeEnd": "11:00"
+            },
+            {
+                "key": "3",
+                "name": "OOPS",
+                "timeStart": "11:00",
+                "timeEnd": "12:00"
+            },
+            {
+                "key": "4",
+                "name": "Math",
+                "timeStart": "12:00",
+                "timeEnd": "13:00"
+            },
+            {
+                "key": "5",
+                "name": "Library",
+                "timeStart": "13:00",
+                "timeEnd": "14:00"
+            }
+        ]
+    },
+    {
+        "day": "wednesday",
+        "classes": [
+            {
+                "key": "1",
+                "name": "Computer Architecture",
+                "timeStart": "10:00",
+                "timeEnd": "11:00"
+            },
+            {
+                "key": "2",
+                "name": "Physics",
+                "timeStart": "11:00",
+                "timeEnd": "12:00"
+            },
+            {
+                "key": "3",
+                "name": "Math",
+                "timeStart": "12:00",
+                "timeEnd": "13:00"
+            },
+            {
+                "key": "4",
+                "name": "Recess",
+                "timeStart": "13:00",
+                "timeEnd": "14:00"
+            },
+            {
+                "key": "5",
+                "name": "English Lab",
+                "timeStart": "14:00",
+                "timeEnd": "16:00"
+            }
+        ]
+    },
+    {
+        "day": "thursday",
+        "classes": [
+            {
+                "key": "1",
+                "name": "Physics Lab",
+                "timeStart": "9:00",
+                "timeEnd": "11:00"
+            },
+            {
+                "key": "2",
+                "name": "Recess",
+                "timeStart": "11:00",
+                "timeEnd": "12:00"
+            },
+            {
+                "key": "3",
+                "name": "Bio-Informatics",
+                "timeStart": "12:00",
+                "timeEnd": "13:00"
+            },
+            {
+                "key": "4",
+                "name": "Math",
+                "timeStart": "13:00",
+                "timeEnd": "14:00"
+            },
+            {
+                "key": "5",
+                "name": "OOPS",
+                "timeStart": "14:00",
+                "timeEnd": "15:00"
+            }
+        ]
+    },
+    {
+        "day": "friday",
+        "classes": [
+            {
+                "key": "1",
+                "name": "CWS Lab",
+                "timeStart": "9:00",
+                "timeEnd": "11:00"
+            },
+            {
+                "key": "2",
+                "name": "Recess",
+                "timeStart": "11:00",
+                "timeEnd": "12:00"
+            },
+            {
+                "key": "3",
+                "name": "OOPS",
+                "timeStart": "12:00",
+                "timeEnd": "13:00"
+            },
+            {
+                "key": "4",
+                "name": "Bio-Informatics",
+                "timeStart": "13:00",
+                "timeEnd": "14:00"
+            },
+            {
+                "key": "5",
+                "name": "English",
+                "timeStart": "14:00",
+                "timeEnd": "15:00"
+            }
+        ]
+    },
+    {
+        "day": "saturday",
+        "classes": [
+            {
+                "key": "1",
+                "name": "OOPS Lab",
+                "timeStart": "8:00",
+                "timeEnd": "10:00"
+            },
+            {
+                "key": "2",
+                "name": "Recess",
+                "timeStart": "10:00",
+                "timeEnd": "11:00"
+            },
+            {
+                "key": "3",
+                "name": "Physics",
+                "timeStart": "11:00",
+                "timeEnd": "12:00"
+            },
+            {
+                "key": "4",
+                "name": "English",
+                "timeStart": "12:00",
+                "timeEnd": "13:00"
+            },
+            {
+                "key": "5",
+                "name": "Recess",
+                "timeStart": "13:00",
+                "timeEnd": "14:00"
+            },
+            {
+                "key": "6",
+                "name": "Liberal Arts",
+                "timeStart": "14:00",
+                "timeEnd": "16:00"
+            }
+        ]
+    }
+]
