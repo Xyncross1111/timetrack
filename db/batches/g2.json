@@ -70,12 +70,6 @@
                 "name": "Math",
                 "timeStart": "12:00",
                 "timeEnd": "13:00"
-            },
-            {
-                "key": "5",
-                "name": "Library",
-                "timeStart": "13:00",
-                "timeEnd": "14:00"
             }
         ]
     },
@@ -118,8 +112,14 @@
         "day": "thursday",
         "classes": [
             {
-                "key": "1",
+                "key": "2",
                 "name": "Bio-Informatics",
+                "timeStart": "11:00",
+                "timeEnd": "12:00"
+            },
+            {
+                "key": "3",
+                "name": "Recess",
                 "timeStart": "12:00",
                 "timeEnd": "13:00"
             },
