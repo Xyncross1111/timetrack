@@ -60,10 +60,10 @@ export default function Home() {
             <h2 className={"info"}><a href="https://github.com/Xyncross1111/timetrack">Repo</a></h2>
             <div className="datetime-batch-container">
                 <Datetime date={date} />
-                {sectionsWithNoBatch.includes(section) ? "": <Batch setData={setData} section={section}/> }
+                {!sectionsWithNoBatch.includes(section)&&<Batch setData={setData} section={section}/> }
             </div>
             <Navigate handlePrev={handlePrev} handleNext={handleNext} />
-            <Schedule classes={classes.classes} day={classes.day} date={date} />
+            <Schedule classes={classes.classes} day={classes.day} date={fakeDate} />
         </div>
     )
 }

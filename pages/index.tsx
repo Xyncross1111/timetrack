@@ -49,7 +49,7 @@ export default function Home() {
                 <Batch setData={setData} section={"a"} />
             </div>
             <Navigate handlePrev={handlePrev} handleNext={handleNext} />
-            <Schedule classes={classes.classes} day={classes.day} date={date}/>
+            <Schedule classes={classes.classes} day={classes.day} date={fakeDate}/>
         </div>
     )
 }
