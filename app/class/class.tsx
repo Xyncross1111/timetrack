@@ -46,7 +46,7 @@ const Class: FC<classProps> = ({name, timeStart, timeEnd, date}) => {
     return (
         <div className={cssClassName}>
             <h2>{name}</h2>
-            <p>{begin} - {end}</p>
+            <p>{begin}:00 to {end}:00</p>
             {classesWithIcons.includes(name)&&<Icon class={name} />}
         </div>
     );
