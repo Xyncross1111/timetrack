@@ -21,7 +21,7 @@ export default function Home() {
     const [classes, setClasses] = useState(data[weekDay]);
 
     useEffect(() => {
-        setClasses(data[weekDay]);
+        setClasses(data[fakeWeekDay]);
     }, [data, fakeWeekDay])
 
     const handleNext = () => {
