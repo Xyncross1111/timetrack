@@ -15,17 +15,8 @@ interface BatchNames {
 
 const Batch: FC<BatchProps> = ({ setData, section }: BatchProps) => {
 
-    let sectionsWithNoBatch = ['o3', 'n3'];
-    let data1 = require(`../../db/batches/a1.json`);
-    let data2 = require(`../../db/batches/a2.json`);
-
-    if (sectionsWithNoBatch.includes(section)) {
-        data1 = data2 = require(`../../db/batches/${section}.json`);
-    }
-    else {
-        data1 = require(`../../db/batches/${section}1.json`);
-        data2 = require(`../../db/batches/${section}2.json`);
-    }
+    const data1 = require(`../../db/batches/${section}1.json`);
+    const data2 = require(`../../db/batches/${section}2.json`);
 
     const [batch, setBatch] = useState("1");
 
@@ -56,15 +47,12 @@ const Batch: FC<BatchProps> = ({ setData, section }: BatchProps) => {
     });
 
     const batchNames: BatchNames = batchName;
-
-    if (sectionsWithNoBatch.includes(section)) {
-        return (<></>)
-    }
+    
     return (
         <div className="container">
             <div className="text" onClick={handleBatch}>
-                <p className={`${batch === "1" ? "selected" : "not-selected"}`}>{batchNames[section + 1]}</p>
-                <p className={`${batch === "2" ? "selected" : "not-selected"}`}>{batchNames[section + 2]}</p>
+                <p className={`${batch === "1" ? "selected" : "not-selected"}`}>{batchNames[section + '1']}</p>
+                <p className={`${batch === "2" ? "selected" : "not-selected"}`}>{batchNames[section + '2']}</p>
             </div>
             <label className="switch" {...handlers}>
                 <input type="checkbox" onChange={handleBatch} checked={batch === "2"} />

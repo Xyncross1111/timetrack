@@ -8,7 +8,7 @@
     src: url(fonts/Quicksand-Regular.ttf);
 }
 
-.classes {
+.class {
     margin-top: 10px;
     width: 100%;
     padding: 10px;
@@ -22,7 +22,7 @@
     font-family: QuickSandLight;
 }
 
-.classes h2 {
+.class h2 {
     font-family: QuickSandRegular;
     text-shadow: 0px 0px 4px #ffffff;
     user-select: text;

@@ -4,71 +4,50 @@ import "./class.css"
 import Icon from "@/app/icon/icon";
 
 interface classProps {
-    key: string;
     name: string;
     timeStart: string;
     timeEnd: string;
     date: Date;
 }
-const Class: FC<classProps> = ({key, name, timeStart, timeEnd, date}) => {
+const Class: FC<classProps> = ({name, timeStart, timeEnd, date}) => {
 
-    let className = `class - classes`;
+    let cssClassName = "class";
+    const classesWithIcons = ["Math","Physics","OOPS","English","UHV"]
 
-    const [currDateTime, setCurrDateTime] = useState(new Date());
-
-    const currDate = new Date();
-    const [hour, setHour] = useState(currDateTime.getHours() + currDateTime.getMinutes()/60);
+    const [currDate, setCurrDate] = useState(new Date());
+    const [hour, setHour] = useState(currDate.getHours() + currDate.getMinutes()/60  + currDate.getSeconds()/3600);
 
     const updateTime = () => {
         const newDateTime = new Date();
-        setCurrDateTime(newDateTime);
-        setHour(newDateTime.getHours() + newDateTime.getMinutes()/60);
+        setCurrDate(newDateTime);
+        setHour(newDateTime.getHours() + newDateTime.getMinutes()/60 + newDateTime.getSeconds()/3600);
     };
 
     useEffect(() => {
         const intervalId = setInterval(updateTime, 1000);
         return () => clearInterval(intervalId);
-    }, []);
+    }, [hour]);
 
     const begin = parseInt(timeStart);
     const end = parseInt(timeEnd);
 
-    if (hour >= begin && hour < end && currDate.getDate() === date.getDate() && currDate.getMonth() === date.getMonth() && currDate.getFullYear() === date.getFullYear()){
-        className += " active";
+    if (begin <= hour && hour < end && currDate.toDateString() === date.toDateString()){
+        cssClassName += " active";
     }
     if (begin + 2 === end){
-        className += " lab";
+        cssClassName += " lab";
     }
     if (name === "Recess"){
-        className += " recess";
+        cssClassName += " recess";
     }
-
-    // past classses
-    if ((end <= hour && currDate.getDate() === date.getDate() && currDate.getMonth() === date.getMonth() && currDate.getFullYear() === date.getFullYear())){
-        className += " past";
-    }
-    if(date.getDate() < currDate.getDate() && date.getMonth() === currDate.getMonth() && date.getFullYear() === currDate.getFullYear()){
-        className += " past";
-    }
-    if(date.getMonth() < currDate.getMonth() && date.getFullYear() === currDate.getFullYear()){
-        className += " past";
-    }
-    if(date.getFullYear() < currDate.getFullYear()){
-        className += " past";
-    }
-    if(name === "Math" || name === "Physics" || name === "OOPS" || name === "English" || name === "UHV"){
-        return (
-            <div className={className}>
-                <h2>{name}</h2>
-                <p>{begin} - {end}</p>
-                <Icon class={name} />
-            </div>
-        );
+    if (date.getTime()<currDate.getTime()) {
+        cssClassName += " past"
     }
     return (
-        <div className={className}>
+        <div className={cssClassName}>
             <h2>{name}</h2>
             <p>{begin} - {end}</p>
+            {classesWithIcons.includes(name)&&<Icon class={name} />}
         </div>
     );
 }
