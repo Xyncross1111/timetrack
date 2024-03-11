@@ -41,7 +41,9 @@ const Class: FC<classProps> = ({ name, timeStart, timeEnd, date }) => {
     if (name === "Recess") {
         cssClassName += " recess";
     }
-    if (date.getTime() < currDate.getTime()) {
+    if (date.getTime() < currDate.getTime() && currDate.toDateString() !== date.toDateString()){
+        cssClassName += " past"
+    }else if (hour >= end && currDate.toDateString() === date.toDateString()){
         cssClassName += " past"
     }
 
@@ -57,8 +59,10 @@ const Class: FC<classProps> = ({ name, timeStart, timeEnd, date }) => {
 
 const parseTo12Hr = (timeString: string) => {
     let time = parseInt(timeString);
-    
-    return `${time % 12}:${timeString.slice(-2)} ${time>12?"PM":"AM"}`;
+    let time12 = time%12;
+    if(time12 === 0) time12 = 12;
+
+    return `${time12}:${timeString.slice(-2)} ${time >= 12 ? "PM" : "AM"}`;
 }
 
 export default Class;
