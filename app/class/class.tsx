@@ -58,11 +58,13 @@ const Class: FC<classProps> = ({ name, timeStart, timeEnd, date }) => {
 
 
 const parseTo12Hr = (timeString: string) => {
-    let time = parseInt(timeString);
-    let time12 = time%12;
-    if(time12 === 0) time12 = 12;
-
-    return `${time12}:${timeString.slice(-2)} ${time >= 12 ? "PM" : "AM"}`;
+    if(timeString.length === 4){
+        timeString = "0" + timeString;
+    }
+    return new Date('2004-09-14T' + timeString + ':00Z')
+    .toLocaleTimeString('en-US',
+      {timeZone:'UTC',hour12:true,hour:'numeric',minute:'numeric'}
+    );
 }
 
 export default Class;
