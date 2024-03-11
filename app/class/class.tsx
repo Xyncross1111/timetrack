@@ -57,9 +57,8 @@ const Class: FC<classProps> = ({ name, timeStart, timeEnd, date }) => {
 
 const parseTo12Hr = (timeString: string) => {
     let time = parseInt(timeString);
-    let mins: number = parseInt(timeString.slice(-2));
     
-    return time > 12 ? `${time % 12}:${mins} PM`: `${time}:${mins} AM`;
+    return `${time % 12}:${timeString.slice(-2)} ${time>12?"PM":"AM"}`;
 }
 
 export default Class;
