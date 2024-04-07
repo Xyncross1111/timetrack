@@ -1,0 +1,113 @@
+[
+    {
+      "day": "sunday",
+      "date" : "14",
+      "classes": []
+    },
+    {
+      "day": "monday",
+      "date": "15",
+      "classes": [
+        {
+          "key": "1",
+          "name": "Computer Architecture",
+          "timeStart": "9:00",
+          "timeEnd": "10:00"
+        },
+        {
+          "key": "2",
+          "name": "Recess",
+          "timeStart": "10:00",
+          "timeEnd": "13:00"
+        },
+        {
+          "key": "3",
+          "name": "OOP",
+          "timeStart": "13:00",
+          "timeEnd": "14:00"
+        }
+      ]
+    },
+    {
+      "day": "tuesday",
+      "date": "16",
+      "classes": [
+        {
+          "key": "1",
+          "name": "Bio-Informatics",
+          "timeStart": "9:00",
+          "timeEnd": "13:00"
+        },
+        {
+          "key": "2",
+          "name": "Recess",
+          "timeStart": "10:00",
+          "timeEnd": "13:00"
+        },
+        {
+          "key": "3",
+          "name": "Computer Workshop",
+          "timeStart": "13:00",
+          "timeEnd": "14:00"
+        }
+      ]
+    },
+    {
+      "day": "wednesday",
+      "date" : "10",
+      "classes": []
+    },
+    {
+      "day": "thursday",
+      "date" : "11",
+      "classes": []
+    },
+    {
+      "day": "friday",
+      "date": "12",
+      "classes": [
+        {
+          "key": "1",
+          "name": "Discrete Math",
+          "timeStart": "9:00",
+          "timeEnd": "10:00"
+        },
+        {
+          "key": "2",
+          "name": "Recess",
+          "timeStart": "10:00",
+          "timeEnd": "13:00"
+        },
+        {
+          "key": "3",
+          "name": "UHV",
+          "timeStart": "13:00",
+          "timeEnd": "14:00"
+        }
+      ]
+    },
+    {
+      "day": "saturday",
+      "date": "13",
+      "classes": [
+        {
+          "key": "1",
+          "name": "Physics",
+          "timeStart": "9:00",
+          "timeEnd": "10:00"
+        },
+        {
+          "key": "2",
+          "name": "Recess",
+          "timeStart": "10:00",
+          "timeEnd": "13:00"
+        },
+        {
+          "key": "3",
+          "name": "English",
+          "timeStart": "13:00",
+          "timeEnd": "14:00"
+        }
+      ]
+    }
+  ]
