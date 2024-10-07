@@ -8,27 +8,21 @@
     "classes": [
       {
         "key": "1",
-        "name": "Theory of Computation",
-        "timeStart": "10:00",
-        "timeEnd": "11:00"
-      },
-      {
-        "key": "2",
-        "name": "Business Communication",
+        "name": "Data Structures Lab",
         "timeStart": "11:00",
-        "timeEnd": "12:00"
-      },
-      {
-        "key": "3",
-        "name": "Math",
-        "timeStart": "12:00",
         "timeEnd": "13:00"
       },
       {
-        "key": "4",
-        "name": "Data Structures",
+        "key": "2",
+        "name": "Recess",
         "timeStart": "13:00",
         "timeEnd": "14:00"
+      },
+      {
+        "key": "3",
+        "name": "Data Structures",
+        "timeStart": "14:00",
+        "timeEnd": "15:00"
       }
     ]
   },
@@ -37,7 +31,7 @@
     "classes": [
       {
         "key": "1",
-        "name": "Theory of Computation",
+        "name": "Business Communication",
         "timeStart": "10:00",
         "timeEnd": "11:00"
       },
@@ -49,7 +43,7 @@
       },
       {
         "key": "3",
-        "name": "Business Communication",
+        "name": "Recess",
         "timeStart": "12:00",
         "timeEnd": "13:00"
       },
@@ -66,41 +60,7 @@
     "classes": [
       {
         "key": "1",
-        "name": "Data Structures",
-        "timeStart": "10:00",
-        "timeEnd": "11:00"
-      },
-      {
-        "key": "2",
-        "name": "Data Structures Lab",
-        "timeStart": "11:00",
-        "timeEnd": "13:00"
-      }
-    ]
-  },
-  {
-    "day": "thursday",
-    "classes": [
-      {
-        "key": "1",
-        "name": "Theory of Computation",
-        "timeStart": "10:00",
-        "timeEnd": "11:00"
-      },
-      {
-        "key": "2",
-        "name": "Software Lab",
-        "timeStart": "11:00",
-        "timeEnd": "13:00"
-      }
-    ]
-  },
-  {
-    "day": "friday",
-    "classes": [
-      {
-        "key": "1",
-        "name": "Data Structures",
+        "name": "Math",
         "timeStart": "10:00",
         "timeEnd": "11:00"
       },
@@ -112,14 +72,83 @@
       },
       {
         "key": "3",
-        "name": "Math",
+        "name": "Recess",
         "timeStart": "12:00",
         "timeEnd": "13:00"
+      },
+      {
+        "key": "4",
+        "name": "Data Structures",
+        "timeStart": "13:00",
+        "timeEnd": "14:00"
+      },
+      {
+        "key": "5",
+        "name": "Business Communication",
+        "timeStart": "14:00",
+        "timeEnd": "15:00"
+      }
+    ]
+  },
+  {
+    "day": "thursday",
+    "classes": [
+      {
+        "key": "1",
+        "name": "Software Lab",
+        "timeStart": "10:00",
+        "timeEnd": "12:00"
+      },
+      {
+        "key": "2",
+        "name": "Recess",
+        "timeStart": "12:00",
+        "timeEnd": "13:00"
+      },
+      {
+        "key": "3",
+        "name": "Theory of Computation",
+        "timeStart": "13:00",
+        "timeEnd": "14:00"
+      },
+      {
+        "key": "4",
+        "name": "Cyber Laws & Ethics",
+        "timeStart": "14:00",
+        "timeEnd": "15:00"
+      }
+    ]
+  },
+  {
+    "day": "friday",
+    "classes": [
+      {
+        "key": "1",
+        "name": "Math",
+        "timeStart": "10:00",
+        "timeEnd": "11:00"
+      },
+      {
+        "key": "2",
+        "name": "Theory of Computation",
+        "timeStart": "11:00",
+        "timeEnd": "12:00"
       }
     ]
   },
   {
     "day": "saturday",
-    "classes": []
+    "classes": [ {
+      "key": "1",
+      "name": "Cyber Laws & Ethics",
+      "timeStart": "10:00",
+      "timeEnd": "11:00"
+    },
+    {
+      "key": "2",
+      "name": "Data Structures",
+      "timeStart": "11:00",
+      "timeEnd": "12:00"
+    }]
   }
 ]
