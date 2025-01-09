@@ -8,21 +8,27 @@
     "classes": [
       {
         "key": "1",
-        "name": "Data Structures Lab",
+        "name": "Design & Analysis of Algorithms",
         "timeStart": "11:00",
-        "timeEnd": "13:00"
+        "timeEnd": "12:00"
       },
       {
         "key": "2",
+        "name": "Operating System",
+        "timeStart": "12:00",
+        "timeEnd": "13:00"
+      },
+      {
+        "key": "3",
         "name": "Recess",
         "timeStart": "13:00",
         "timeEnd": "14:00"
       },
       {
-        "key": "3",
-        "name": "Data Structures",
+        "key": "4",
+        "name": "Operating System Lab",
         "timeStart": "14:00",
-        "timeEnd": "15:00"
+        "timeEnd": "16:00"
       }
     ]
   },
@@ -31,13 +37,13 @@
     "classes": [
       {
         "key": "1",
-        "name": "Business Communication",
+        "name": "Linear Algebra",
         "timeStart": "10:00",
         "timeEnd": "11:00"
       },
       {
         "key": "2",
-        "name": "Math",
+        "name": "Design & Analysis of Algorithms",
         "timeStart": "11:00",
         "timeEnd": "12:00"
       },
@@ -49,7 +55,7 @@
       },
       {
         "key": "4",
-        "name": "Data Structures",
+        "name": "Managerial Economics",
         "timeStart": "13:00",
         "timeEnd": "14:00"
       }
@@ -60,33 +66,33 @@
     "classes": [
       {
         "key": "1",
-        "name": "Math",
-        "timeStart": "10:00",
-        "timeEnd": "11:00"
-      },
-      {
-        "key": "2",
-        "name": "Theory of Computation",
+        "name": "Design & Analysis of Algorithms",
         "timeStart": "11:00",
         "timeEnd": "12:00"
       },
       {
-        "key": "3",
-        "name": "Recess",
+        "key": "2",
+        "name": "Operating System",
         "timeStart": "12:00",
         "timeEnd": "13:00"
       },
       {
-        "key": "4",
-        "name": "Data Structures",
+        "key": "3",
+        "name": "Recess",
         "timeStart": "13:00",
         "timeEnd": "14:00"
       },
       {
-        "key": "5",
-        "name": "Business Communication",
+        "key": "4",
+        "name": "Sofware Engineering",
         "timeStart": "14:00",
         "timeEnd": "15:00"
+      },
+      {
+        "key": "5",
+        "name": "Software Engineering Lab",
+        "timeStart": "15:00",
+        "timeEnd": "17:00"
       }
     ]
   },
@@ -95,27 +101,33 @@
     "classes": [
       {
         "key": "1",
-        "name": "Software Lab",
-        "timeStart": "10:00",
+        "name": "Linear Algebra",
+        "timeStart": "11:00",
         "timeEnd": "12:00"
       },
       {
         "key": "2",
-        "name": "Recess",
+        "name": "Managerial Economics",
         "timeStart": "12:00",
         "timeEnd": "13:00"
       },
       {
         "key": "3",
-        "name": "Theory of Computation",
+        "name": "Recess",
         "timeStart": "13:00",
         "timeEnd": "14:00"
       },
       {
         "key": "4",
-        "name": "Cyber Laws & Ethics",
+        "name": "Environmental Education",
         "timeStart": "14:00",
         "timeEnd": "15:00"
+      },
+      {
+        "key": "5",
+        "name": "Software Lab",
+        "timeStart": "15:00",
+        "timeEnd": "17:00"
       }
     ]
   },
@@ -124,15 +136,21 @@
     "classes": [
       {
         "key": "1",
-        "name": "Math",
+        "name": "Sofware Engineering",
         "timeStart": "10:00",
         "timeEnd": "11:00"
       },
       {
         "key": "2",
-        "name": "Theory of Computation",
+        "name": "Operating System",
         "timeStart": "11:00",
         "timeEnd": "12:00"
+      },
+      {
+        "key": "3",
+        "name": "Linear Algebra",
+        "timeStart": "12:00",
+        "timeEnd": "13:00"
       }
     ]
   },
@@ -140,13 +158,13 @@
     "day": "saturday",
     "classes": [ {
       "key": "1",
-      "name": "Cyber Laws & Ethics",
+      "name": "Sofware Engineering",
       "timeStart": "10:00",
       "timeEnd": "11:00"
     },
     {
       "key": "2",
-      "name": "Data Structures",
+      "name": "Environmental Education",
       "timeStart": "11:00",
       "timeEnd": "12:00"
     }]
