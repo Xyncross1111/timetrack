@@ -7,6 +7,12 @@
     "day": "monday",
     "classes": [
       {
+        "key": "4",
+        "name": "Environmental Education",
+        "timeStart": "10:00",
+        "timeEnd": "11:00"
+      },
+      {
         "key": "1",
         "name": "Design & Analysis of Algorithms",
         "timeStart": "11:00",
@@ -72,7 +78,7 @@
       },
       {
         "key": "2",
-        "name": "Operating System",
+        "name": "Linear Algebra",
         "timeStart": "12:00",
         "timeEnd": "13:00"
       },
@@ -101,7 +107,13 @@
     "classes": [
       {
         "key": "1",
-        "name": "Linear Algebra",
+        "name": "Software Engineering",
+        "timeStart": "11:00",
+        "timeEnd": "12:00"
+      },
+      {
+        "key": "6",
+        "name": "Operating System",
         "timeStart": "11:00",
         "timeEnd": "12:00"
       },
@@ -151,6 +163,18 @@
         "name": "Linear Algebra",
         "timeStart": "12:00",
         "timeEnd": "13:00"
+      },
+      {
+        "key": "4",
+        "name": "Recess",
+        "timeStart": "12:00",
+        "timeEnd": "13:00"
+      },
+      {
+        "key": "3",
+        "name": "Community Project",
+        "timeStart": "13:00",
+        "timeEnd": "14:00"
       }
     ]
   },
